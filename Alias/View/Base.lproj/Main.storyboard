@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainScreenViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="N0G-wa-cfU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AliasLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Mwn-I1-LV4">
+                                <rect key="frame" x="20" y="54" width="374" height="521"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="yYR-zr-cte">
+                                <rect key="frame" x="10" y="625" width="394" height="187"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20G-rz-d7L">
+                                        <rect key="frame" x="50" y="0.0" width="294" height="70"/>
+                                        <color key="backgroundColor" red="0.77532702679999999" green="0.42728552219999999" blue="0.28115850689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="NME-Ww-Wbw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="55"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Play">
+                                            <color key="titleColor" red="0.94901960784313721" green="0.98039215686274506" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4p2-te-MhX"/>
+                                            <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="upd-CK-hyu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLm-1O-q7H">
+                                        <rect key="frame" x="50" y="117" width="294" height="70"/>
+                                        <color key="backgroundColor" red="0.62480407950000005" green="0.25178578499999998" blue="0.69073241949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="f3S-ob-fZF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="44"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="How to play">
+                                            <color key="titleColor" red="0.94901960784313721" green="0.98039215686274506" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="rulesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mSe-VX-YaD"/>
+                                            <action selector="rulesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="78I-RZ-A0B"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cLm-1O-q7H" firstAttribute="centerX" secondItem="yYR-zr-cte" secondAttribute="centerX" id="1pZ-95-dZd"/>
+                                    <constraint firstAttribute="trailing" secondItem="cLm-1O-q7H" secondAttribute="trailing" constant="50" id="9F1-hU-eky"/>
+                                    <constraint firstItem="20G-rz-d7L" firstAttribute="centerX" secondItem="yYR-zr-cte" secondAttribute="centerX" id="fDB-4L-lcP"/>
+                                    <constraint firstItem="cLm-1O-q7H" firstAttribute="leading" secondItem="yYR-zr-cte" secondAttribute="leading" constant="50" id="kEB-Qq-z0q"/>
+                                    <constraint firstAttribute="trailing" secondItem="20G-rz-d7L" secondAttribute="trailing" constant="50" id="nNQ-VC-uI9"/>
+                                    <constraint firstItem="20G-rz-d7L" firstAttribute="leading" secondItem="yYR-zr-cte" secondAttribute="leading" constant="50" id="vBQ-CT-eH6"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="N0G-wa-cfU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3fX-mj-1EM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yYR-zr-cte" secondAttribute="bottom" constant="50" id="GmO-UA-STS"/>
+                            <constraint firstItem="N0G-wa-cfU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TgX-gl-ZEb"/>
+                            <constraint firstItem="N0G-wa-cfU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UlE-lr-XCv"/>
+                            <constraint firstItem="yYR-zr-cte" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="VvE-OR-7go"/>
+                            <constraint firstItem="Mwn-I1-LV4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="evm-9A-7Id"/>
+                            <constraint firstItem="Mwn-I1-LV4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fV4-uX-HTk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yYR-zr-cte" secondAttribute="trailing" constant="10" id="fvZ-HF-Kf0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mwn-I1-LV4" secondAttribute="trailing" constant="20" id="gQY-UA-WDK"/>
+                            <constraint firstItem="yYR-zr-cte" firstAttribute="top" secondItem="Mwn-I1-LV4" secondAttribute="bottom" constant="50" id="nsR-gp-wm0"/>
+                            <constraint firstAttribute="bottom" secondItem="N0G-wa-cfU" secondAttribute="bottom" id="yST-pC-kEX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.6956521739130448" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AliasLogo" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="background" width="250" height="444.66665649414062"/>
+    </resources>
+</document>
