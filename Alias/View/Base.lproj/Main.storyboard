@@ -94,12 +94,119 @@
                     </view>
                     <connections>
                         <segue destination="Y7t-dQ-KVM" kind="presentation" identifier="goToRules" id="rjM-I1-5Ha"/>
-                        <segue destination="wgA-B9-RMN" kind="presentation" identifier="goToThemes" id="eyT-w1-xKl"/>
+                        <segue destination="ySK-Kn-4tN" kind="presentation" identifier="goToChoice" id="95S-Ll-tic"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8.6956521739130448" y="97.767857142857139"/>
+            <point key="canvasLocation" x="-764" y="98"/>
+        </scene>
+        <!--Choice Controller-->
+        <scene sceneID="D88-sx-mKU">
+            <objects>
+                <viewController id="ySK-Kn-4tN" customClass="ChoiceController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gJz-iR-PIM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8c-Bn-mFd">
+                                <rect key="frame" x="60" y="657" width="294" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.62480407950000005" green="0.25178578499999998" blue="0.69073241949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="44"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Далее">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.98039215690000003" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backToMainButton:" destination="wgA-B9-RMN" eventType="touchUpInside" id="L6A-OA-Gya"/>
+                                    <action selector="goToThemesPressed:" destination="ySK-Kn-4tN" eventType="touchUpInside" id="pC1-SH-5SI"/>
+                                    <action selector="rulesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dHe-j6-jw8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXF-Il-mKT">
+                                <rect key="frame" x="60" y="738" width="294" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.62480407950000005" green="0.25178578499999998" blue="0.69073241949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="44"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Назад">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.98039215690000003" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backToMainButton:" destination="wgA-B9-RMN" eventType="touchUpInside" id="jK4-bg-tnX"/>
+                                    <action selector="backToMainPressed:" destination="ySK-Kn-4tN" eventType="touchUpInside" id="Hq8-pr-ncI"/>
+                                    <action selector="rulesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="td9-ts-3tV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7L-oK-ZFV">
+                                <rect key="frame" x="191" y="161" width="32" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="55"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Количество раундов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9j-9U-eVu">
+                                <rect key="frame" x="20" y="297" width="374" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="43"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Количество команд" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOA-YI-etR">
+                                <rect key="frame" x="28" y="79" width="358" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="43"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcC-WS-3hq">
+                                <rect key="frame" x="191" y="402" width="32" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="55"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="6" translatesAutoresizingMaskIntoConstraints="NO" id="HWY-3u-aUF">
+                                <rect key="frame" x="18" y="229" width="378" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="MdE-wE-OLq"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.51797945209999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.49510380990000002" colorSpace="custom" customColorSpace="sRGB"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="DmT-oQ-0Jt">
+                                <rect key="frame" x="18" y="470" width="378" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="n1l-uN-vMo"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.51797945209999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.49510380990000002" colorSpace="custom" customColorSpace="sRGB"/>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Ak-KH-U1w"/>
+                        <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="personsLabel" destination="GOA-YI-etR" id="4MC-8Y-Xtf"/>
+                        <outlet property="roundsLabel" destination="V9j-9U-eVu" id="d9x-CM-FFS"/>
+                        <segue destination="wgA-B9-RMN" kind="presentation" identifier="goToThemes" id="K5E-SN-Jjh"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="goBackToMain" id="Iky-IC-GXx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6U-ph-pF1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2.8985507246376816" y="-189.50892857142856"/>
         </scene>
         <!--Themes View Controller-->
         <scene sceneID="c0G-ma-vJR">
@@ -117,6 +224,9 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Первая тема">
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="55"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="theme1Pressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="Uir-vE-tGT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFn-a0-nPO">
                                 <rect key="frame" x="20" y="234" width="374" height="136"/>
@@ -126,6 +236,9 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Вторая тема">
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="55"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="theme2Pressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="1f1-9I-6uM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRe-HA-Ouv">
                                 <rect key="frame" x="20" y="407" width="374" height="136"/>
@@ -135,6 +248,9 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Третья тема">
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="55"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="theme3Pressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="7gw-HO-gdW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuJ-2O-u8l">
                                 <rect key="frame" x="20" y="577" width="374" height="136"/>
@@ -144,9 +260,12 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Четвертая тема">
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="55"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="theme4Pressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="kUb-F1-JvC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhh-iG-plh">
-                                <rect key="frame" x="60" y="762" width="294" height="70"/>
+                                <rect key="frame" x="60" y="738" width="294" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.62480407950000005" green="0.25178578499999998" blue="0.69073241949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="44"/>
@@ -169,12 +288,17 @@
                         <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="goBackToMain" id="NX2-Ho-IGb"/>
+                        <outlet property="backButton" destination="uhh-iG-plh" id="vnm-ed-LHH"/>
+                        <outlet property="theme1Button" destination="eP3-JQ-Hmh" id="z5z-r2-wKG"/>
+                        <outlet property="theme2Button" destination="CFn-a0-nPO" id="W2q-Cf-eYN"/>
+                        <outlet property="theme3Button" destination="WRe-HA-Ouv" id="hkh-dk-upy"/>
+                        <outlet property="theme4Button" destination="IuJ-2O-u8l" id="4Ec-KC-b1I"/>
+                        <segue destination="ySK-Kn-4tN" kind="presentation" identifier="goBackToChoice" id="Tv6-nL-hQH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yrE-c4-OsV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="-632"/>
+            <point key="canvasLocation" x="797" y="98"/>
         </scene>
         <!--Rules View Controller-->
         <scene sceneID="vZ0-XG-sDG">
@@ -241,9 +365,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yua-oX-yH2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="98"/>
+            <point key="canvasLocation" x="3" y="462"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="K5E-SN-Jjh"/>
+        <segue reference="Tv6-nL-hQH"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="AliasLogo" width="170.66667175292969" height="170.66667175292969"/>
         <image name="background" width="250" height="444.66665649414062"/>

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		27D3830C2890F04900B8A285 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D3830B2890F04900B8A285 /* RulesViewController.swift */; };
 		303362EB2891748F00876D80 /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303362EA2891748F00876D80 /* ThemesViewController.swift */; };
+		30BD8933289199CF007E2E1D /* ChoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD8932289199CF007E2E1D /* ChoiceController.swift */; };
 		E922CBC828910CCA005B9D79 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E922CBC728910CCA005B9D79 /* README.md */; };
 		E9A96D8D2890478D00F38A49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A96D8C2890478D00F38A49 /* AppDelegate.swift */; };
 		E9A96D8F2890478D00F38A49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A96D8E2890478D00F38A49 /* SceneDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		27D3830B2890F04900B8A285 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		303362EA2891748F00876D80 /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
+		30BD8932289199CF007E2E1D /* ChoiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceController.swift; sourceTree = "<group>"; };
 		E922CBC728910CCA005B9D79 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E9A96D892890478D00F38A49 /* Alias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A96D8C2890478D00F38A49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				E9A96D902890478D00F38A49 /* MainScreenViewController.swift */,
 				27D3830B2890F04900B8A285 /* RulesViewController.swift */,
 				303362EA2891748F00876D80 /* ThemesViewController.swift */,
+				30BD8932289199CF007E2E1D /* ChoiceController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30BD8933289199CF007E2E1D /* ChoiceController.swift in Sources */,
 				E9A96D912890478D00F38A49 /* MainScreenViewController.swift in Sources */,
 				E9A96D8D2890478D00F38A49 /* AppDelegate.swift in Sources */,
 				27D3830C2890F04900B8A285 /* RulesViewController.swift in Sources */,
