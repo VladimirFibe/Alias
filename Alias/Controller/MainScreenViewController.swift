@@ -16,6 +16,7 @@ class MainScreenViewController: UIViewController {
     
     @IBAction func playButtonPressed(_ sender: UIButton) {
         // переход на экран с игрой
+        self.performSegue(withIdentifier: "goToThemes", sender: self)
     }
     
     @IBAction func rulesButtonPressed(_ sender: UIButton) {
