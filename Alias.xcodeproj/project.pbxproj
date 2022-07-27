@@ -11,12 +11,17 @@
 		303362EB2891748F00876D80 /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303362EA2891748F00876D80 /* ThemesViewController.swift */; };
 		30BD8933289199CF007E2E1D /* ChoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD8932289199CF007E2E1D /* ChoiceController.swift */; };
 		CECC97692891B18E0075AA7B /* WordsBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC97682891B18E0075AA7B /* WordsBrain.swift */; };
-		CECC976B2891B9D50075AA7B /* EasyWords.json in Resources */ = {isa = PBXBuildFile; fileRef = CECC976A2891B9D40075AA7B /* EasyWords.json */; };
 		CECC976D2891BC910075AA7B /* WordsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC976C2891BC910075AA7B /* WordsData.swift */; };
-		CECC97712891C29A0075AA7B /* NewYear.json in Resources */ = {isa = PBXBuildFile; fileRef = CECC976E2891C29A0075AA7B /* NewYear.json */; };
-		CECC97722891C29B0075AA7B /* Hardcore.json in Resources */ = {isa = PBXBuildFile; fileRef = CECC976F2891C29A0075AA7B /* Hardcore.json */; };
-		CECC97732891C29B0075AA7B /* Normal.json in Resources */ = {isa = PBXBuildFile; fileRef = CECC97702891C29A0075AA7B /* Normal.json */; };
 		E922CBC828910CCA005B9D79 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E922CBC728910CCA005B9D79 /* README.md */; };
+		E972BA262892022500B05AF5 /* Summer.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA1D2892022500B05AF5 /* Summer.json */; };
+		E972BA272892022500B05AF5 /* Phraseological.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA1E2892022500B05AF5 /* Phraseological.json */; };
+		E972BA282892022500B05AF5 /* Teams.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA1F2892022500B05AF5 /* Teams.json */; };
+		E972BA292892022500B05AF5 /* Hardcore.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA202892022500B05AF5 /* Hardcore.json */; };
+		E972BA2A2892022500B05AF5 /* NewYear.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA212892022500B05AF5 /* NewYear.json */; };
+		E972BA2B2892022500B05AF5 /* Normal.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA222892022500B05AF5 /* Normal.json */; };
+		E972BA2C2892022500B05AF5 /* 0.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA232892022500B05AF5 /* 0.json */; };
+		E972BA2D2892022500B05AF5 /* Quests.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA242892022500B05AF5 /* Quests.json */; };
+		E972BA2E2892022500B05AF5 /* QuickGame.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA252892022500B05AF5 /* QuickGame.json */; };
 		E9A96D8D2890478D00F38A49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A96D8C2890478D00F38A49 /* AppDelegate.swift */; };
 		E9A96D8F2890478D00F38A49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A96D8E2890478D00F38A49 /* SceneDelegate.swift */; };
 		E9A96D912890478D00F38A49 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A96D902890478D00F38A49 /* MainScreenViewController.swift */; };
@@ -30,12 +35,17 @@
 		303362EA2891748F00876D80 /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
 		30BD8932289199CF007E2E1D /* ChoiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceController.swift; sourceTree = "<group>"; };
 		CECC97682891B18E0075AA7B /* WordsBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsBrain.swift; sourceTree = "<group>"; };
-		CECC976A2891B9D40075AA7B /* EasyWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = EasyWords.json; path = ../../../../../Users/user/Downloads/EasyWords.json; sourceTree = "<group>"; };
 		CECC976C2891BC910075AA7B /* WordsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsData.swift; sourceTree = "<group>"; };
-		CECC976E2891C29A0075AA7B /* NewYear.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = NewYear.json; path = ../../../../../Users/user/Downloads/NewYear.json; sourceTree = "<group>"; };
-		CECC976F2891C29A0075AA7B /* Hardcore.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Hardcore.json; path = ../../../../../Users/user/Downloads/Hardcore.json; sourceTree = "<group>"; };
-		CECC97702891C29A0075AA7B /* Normal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Normal.json; path = ../../../../../Users/user/Downloads/Normal.json; sourceTree = "<group>"; };
 		E922CBC728910CCA005B9D79 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E972BA1D2892022500B05AF5 /* Summer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Summer.json; sourceTree = "<group>"; };
+		E972BA1E2892022500B05AF5 /* Phraseological.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Phraseological.json; sourceTree = "<group>"; };
+		E972BA1F2892022500B05AF5 /* Teams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Teams.json; sourceTree = "<group>"; };
+		E972BA202892022500B05AF5 /* Hardcore.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hardcore.json; sourceTree = "<group>"; };
+		E972BA212892022500B05AF5 /* NewYear.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NewYear.json; sourceTree = "<group>"; };
+		E972BA222892022500B05AF5 /* Normal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Normal.json; sourceTree = "<group>"; };
+		E972BA232892022500B05AF5 /* 0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0.json; sourceTree = "<group>"; };
+		E972BA242892022500B05AF5 /* Quests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Quests.json; sourceTree = "<group>"; };
+		E972BA252892022500B05AF5 /* QuickGame.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuickGame.json; sourceTree = "<group>"; };
 		E9A96D892890478D00F38A49 /* Alias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A96D8C2890478D00F38A49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9A96D8E2890478D00F38A49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +95,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		E972BA1C289201F900B05AF5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E972BA232892022500B05AF5 /* 0.json */,
+				E972BA202892022500B05AF5 /* Hardcore.json */,
+				E972BA212892022500B05AF5 /* NewYear.json */,
+				E972BA222892022500B05AF5 /* Normal.json */,
+				E972BA1E2892022500B05AF5 /* Phraseological.json */,
+				E972BA242892022500B05AF5 /* Quests.json */,
+				E972BA252892022500B05AF5 /* QuickGame.json */,
+				E972BA1D2892022500B05AF5 /* Summer.json */,
+				E972BA1F2892022500B05AF5 /* Teams.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		E9A96D802890478D00F38A49 = {
 			isa = PBXGroup;
 			children = (
@@ -111,10 +137,7 @@
 				2726216928905E71002D59B0 /* View */,
 				2726216B28905E9A002D59B0 /* Controller */,
 				E9A96D952890479000F38A49 /* Assets.xcassets */,
-				CECC976A2891B9D40075AA7B /* EasyWords.json */,
-				CECC976F2891C29A0075AA7B /* Hardcore.json */,
-				CECC976E2891C29A0075AA7B /* NewYear.json */,
-				CECC97702891C29A0075AA7B /* Normal.json */,
+				E972BA1C289201F900B05AF5 /* Data */,
 				E9A96D972890479000F38A49 /* LaunchScreen.storyboard */,
 				E9A96D9A2890479000F38A49 /* Info.plist */,
 			);
@@ -179,14 +202,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CECC97722891C29B0075AA7B /* Hardcore.json in Resources */,
-				CECC976B2891B9D50075AA7B /* EasyWords.json in Resources */,
-				CECC97712891C29A0075AA7B /* NewYear.json in Resources */,
+				E972BA2C2892022500B05AF5 /* 0.json in Resources */,
+				E972BA2B2892022500B05AF5 /* Normal.json in Resources */,
+				E972BA2A2892022500B05AF5 /* NewYear.json in Resources */,
+				E972BA272892022500B05AF5 /* Phraseological.json in Resources */,
+				E972BA2E2892022500B05AF5 /* QuickGame.json in Resources */,
 				E9A96D992890479000F38A49 /* LaunchScreen.storyboard in Resources */,
-				CECC97732891C29B0075AA7B /* Normal.json in Resources */,
+				E972BA2D2892022500B05AF5 /* Quests.json in Resources */,
+				E972BA292892022500B05AF5 /* Hardcore.json in Resources */,
 				E9A96D962890479000F38A49 /* Assets.xcassets in Resources */,
+				E972BA262892022500B05AF5 /* Summer.json in Resources */,
 				E922CBC828910CCA005B9D79 /* README.md in Resources */,
 				E9A96D942890478D00F38A49 /* Main.storyboard in Resources */,
+				E972BA282892022500B05AF5 /* Teams.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
