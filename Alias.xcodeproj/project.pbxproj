@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27D3830C2890F04900B8A285 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D3830B2890F04900B8A285 /* RulesViewController.swift */; };
 		E9A96D8D2890478D00F38A49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A96D8C2890478D00F38A49 /* AppDelegate.swift */; };
 		E9A96D8F2890478D00F38A49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A96D8E2890478D00F38A49 /* SceneDelegate.swift */; };
 		E9A96D912890478D00F38A49 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A96D902890478D00F38A49 /* MainScreenViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27D3830B2890F04900B8A285 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		E9A96D892890478D00F38A49 /* Alias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A96D8C2890478D00F38A49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9A96D8E2890478D00F38A49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				E9A96D902890478D00F38A49 /* MainScreenViewController.swift */,
+				27D3830B2890F04900B8A285 /* RulesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			files = (
 				E9A96D912890478D00F38A49 /* MainScreenViewController.swift in Sources */,
 				E9A96D8D2890478D00F38A49 /* AppDelegate.swift in Sources */,
+				27D3830C2890F04900B8A285 /* RulesViewController.swift in Sources */,
 				E9A96D8F2890478D00F38A49 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = 2JBA92AKK9;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Alias/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
@@ -319,7 +323,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.qewhouse.Alias;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -334,7 +338,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = 2JBA92AKK9;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Alias/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
@@ -350,7 +354,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.qewhouse.Alias;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

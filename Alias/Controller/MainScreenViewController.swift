@@ -15,10 +15,12 @@ class MainScreenViewController: UIViewController {
     }
     
     @IBAction func playButtonPressed(_ sender: UIButton) {
+        // переход на экран с игрой
     }
     
     @IBAction func rulesButtonPressed(_ sender: UIButton) {
-      
+      // переход на экран с правилами
+        self.performSegue(withIdentifier: "goToRules", sender: self)
     }
     
     }

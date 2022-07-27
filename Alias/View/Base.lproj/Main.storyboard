@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -42,7 +43,6 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4p2-te-MhX"/>
                                             <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="upd-CK-hyu"/>
                                         </connections>
                                     </button>
@@ -63,7 +63,6 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="rulesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mSe-VX-YaD"/>
                                             <action selector="rulesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="78I-RZ-A0B"/>
                                         </connections>
                                     </button>
@@ -93,14 +92,61 @@
                             <constraint firstAttribute="bottom" secondItem="N0G-wa-cfU" secondAttribute="bottom" id="yST-pC-kEX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="Y7t-dQ-KVM" kind="presentation" identifier="goToRules" id="rjM-I1-5Ha"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8.6956521739130448" y="97.767857142857139"/>
         </scene>
+        <!--Rules View Controller-->
+        <scene sceneID="vZ0-XG-sDG">
+            <objects>
+                <viewController id="Y7t-dQ-KVM" customClass="RulesViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="asg-EI-jR7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rB2-za-RYU">
+                                <rect key="frame" x="132" y="752" width="150" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.80392156859999997" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ct3-Ua-YsQ"/>
+                                    <constraint firstAttribute="width" constant="150" id="xBu-oa-lcq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="Y7t-dQ-KVM" eventType="touchUpInside" id="j6u-b5-lMf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tYQ-xx-Txi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rB2-za-RYU" firstAttribute="centerX" secondItem="asg-EI-jR7" secondAttribute="centerX" id="5Mh-3s-Oai"/>
+                            <constraint firstItem="tYQ-xx-Txi" firstAttribute="bottom" secondItem="rB2-za-RYU" secondAttribute="bottom" constant="50" id="dEd-UN-ali"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yua-oX-yH2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="716" y="98"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AliasLogo" width="170.66667175292969" height="170.66667175292969"/>
         <image name="background" width="250" height="444.66665649414062"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
