@@ -22,13 +22,23 @@ class ThemesViewController: UIViewController {
         self.performSegue(withIdentifier: "goBackToChoice", sender: self)
     }
     
+    @IBAction func buttonPressed(_ sender: Any) { //общая функция для всех кнопок
+        
+        var words = Words()
+        print((sender as AnyObject).currentTitle)
+        words.defineWordsArray(topic: (sender as AnyObject).currentTitle!) //определяем массив слов
+    }
+    
+    
+  
+    
     
     @IBOutlet weak var theme1Button: UIButton!
     @IBOutlet weak var theme2Button: UIButton!
     @IBOutlet weak var theme3Button: UIButton!
     @IBOutlet weak var theme4Button: UIButton!
     @IBOutlet weak var backButton: UIButton!
-    
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +47,13 @@ class ThemesViewController: UIViewController {
         theme3Button.layer.cornerRadius = 20
         theme4Button.layer.cornerRadius = 20
         backButton.layer.cornerRadius = 20
+        
+        theme1Button.setTitle(topics.easy.rawValue, for: .normal)
+        theme2Button.setTitle(topics.normal.rawValue, for: .normal)
+        theme3Button.setTitle(topics.hard.rawValue, for: .normal)
+        theme4Button.setTitle(topics.newYear.rawValue, for: .normal)
+
+        
     }
     
 
