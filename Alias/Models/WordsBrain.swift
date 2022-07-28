@@ -15,11 +15,10 @@ enum topics: String {
 }
 
 struct Words{
-    var wordsArray = [String]()
+
     
-    
-    mutating func defineWordsArray(topic: String){ //определение массива слов в зависимости от выбранной темы
-        print(topic)
+    func defineWordsArray(topic: String) -> [String]{ //определение массива слов в зависимости от выбранной темы
+        var wordsArray = [String]()
         switch topic {
         case topics.easy.rawValue:
             wordsArray = parseJSON(resourseName: "EasyWords") ?? []
@@ -33,6 +32,8 @@ struct Words{
             print("Что-то пошло не так")
         }
         
+        return wordsArray
+        
         
     }
     
@@ -43,8 +44,6 @@ struct Words{
         do {
             let data = try Data(contentsOf: url)
             let json = try JSONDecoder().decode(WordsData.self, from: data)
-            
-            print(json.words)
             return json.words
         }
         catch{

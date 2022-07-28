@@ -16,6 +16,7 @@
 		30BD89352892A4F7007E2E1D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD89342892A4F7007E2E1D /* GameViewController.swift */; };
 		CECC97692891B18E0075AA7B /* WordsBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC97682891B18E0075AA7B /* WordsBrain.swift */; };
 		CECC976D2891BC910075AA7B /* WordsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC976C2891BC910075AA7B /* WordsData.swift */; };
+		CECC977528930DD10075AA7B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC977428930DD10075AA7B /* Game.swift */; };
 		E922CBC828910CCA005B9D79 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E922CBC728910CCA005B9D79 /* README.md */; };
 		E972BA262892022500B05AF5 /* Summer.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA1D2892022500B05AF5 /* Summer.json */; };
 		E972BA272892022500B05AF5 /* Phraseological.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA1E2892022500B05AF5 /* Phraseological.json */; };
@@ -44,6 +45,7 @@
 		30BD89342892A4F7007E2E1D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		CECC97682891B18E0075AA7B /* WordsBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsBrain.swift; sourceTree = "<group>"; };
 		CECC976C2891BC910075AA7B /* WordsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsData.swift; sourceTree = "<group>"; };
+		CECC977428930DD10075AA7B /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		E922CBC728910CCA005B9D79 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E972BA1D2892022500B05AF5 /* Summer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Summer.json; sourceTree = "<group>"; };
 		E972BA1E2892022500B05AF5 /* Phraseological.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Phraseological.json; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				CECC97682891B18E0075AA7B /* WordsBrain.swift */,
 				CECC976C2891BC910075AA7B /* WordsData.swift */,
 				27F414042892A71600C40C42 /* Rules.swift */,
+				CECC977428930DD10075AA7B /* Game.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				CECC976D2891BC910075AA7B /* WordsData.swift in Sources */,
 				30BD89352892A4F7007E2E1D /* GameViewController.swift in Sources */,
 				CECC97692891B18E0075AA7B /* WordsBrain.swift in Sources */,
+				CECC977528930DD10075AA7B /* Game.swift in Sources */,
 				27D3830C2890F04900B8A285 /* RulesViewController.swift in Sources */,
 				E9A96D8F2890478D00F38A49 /* SceneDelegate.swift in Sources */,
 				303362EB2891748F00876D80 /* ThemesViewController.swift in Sources */,

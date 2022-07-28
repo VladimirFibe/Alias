@@ -26,9 +26,10 @@ class ThemesViewController: UIViewController {
         
         self.performSegue(withIdentifier: "goToGame", sender: self)
         
-        var words = Words()
-        print((sender as AnyObject).currentTitle)
-        words.defineWordsArray(topic: (sender as AnyObject).currentTitle!) //определяем массив слов
+       // let topic = ((sender as AnyObject).currentTitle)!!
+
+        
+        
     }
     
     

@@ -19,12 +19,19 @@ class GameViewController: UIViewController {
     var totalTime = 0
     var secondsPassed = 0
     var player: AVAudioPlayer!
-    
-    var score = 0
+    var game = Game()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        
+        
+        let  round = 3 // количество раундов - нужно подгрузить из слайдера
+        let topic = topics.newYear.rawValue //выбранная тема - нужно подгрузить из тем
+        game.createGame(topic: topic, round: round)
+        wordLable.text = game.getWord(result: button.skip)
+        
     }
     
     
@@ -36,29 +43,27 @@ class GameViewController: UIViewController {
         let url = Bundle.main.url(forResource: "fail-buzzer-01", withExtension:"mp3")
         player = try! AVAudioPlayer(contentsOf: url!)
         player.play()
-        score -= 1
-        if score < 0 {
-            score = 0
-        }
+        wordLable.text = game.getWord(result: button.fail)
+        scoreLable.text = String(game.getPoints())
     }
+    
     
     @IBAction func skipButton(_ sender: UIButton) {
         // показать следующее слово
         let url = Bundle.main.url(forResource: "fail-buzzer-01", withExtension:"mp3")
         player = try! AVAudioPlayer(contentsOf: url!)
         player.play()
+        wordLable.text = game.getWord(result: button.skip)
+        scoreLable.text = String(game.getPoints())
         }
     
     @IBAction func yesButton(_ sender: UIButton) {
-        //плюс балл
-         score += 1
+        wordLable.text = game.getWord(result: button.yes)
+        scoreLable.text = String(game.getPoints())
+        
     }
-
-
-
     
-    
-    
+
 func updateUI() {
     timer.invalidate()
     totalTime = roundTimer
@@ -68,10 +73,8 @@ func updateUI() {
     
 }
     @objc func updateTimer() {
-        scoreLable.text = String(score)
         if secondsPassed < totalTime {
             let percentageProgress = Float(secondsPassed) / Float(totalTime)
-            print(percentageProgress)
             timerBar.progress = percentageProgress
             secondsPassed += 1
         } else {
