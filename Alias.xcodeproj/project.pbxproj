@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		27D3830C2890F04900B8A285 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D3830B2890F04900B8A285 /* RulesViewController.swift */; };
+		27F414052892A71600C40C42 /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F414042892A71600C40C42 /* Rules.swift */; };
 		303362EB2891748F00876D80 /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303362EA2891748F00876D80 /* ThemesViewController.swift */; };
 		30BD8933289199CF007E2E1D /* ChoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD8932289199CF007E2E1D /* ChoiceController.swift */; };
 		30BD89352892A4F7007E2E1D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD89342892A4F7007E2E1D /* GameViewController.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		27D3830B2890F04900B8A285 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		27F414042892A71600C40C42 /* Rules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
 		303362EA2891748F00876D80 /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
 		30BD8932289199CF007E2E1D /* ChoiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceController.swift; sourceTree = "<group>"; };
 		30BD89342892A4F7007E2E1D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				CECC97682891B18E0075AA7B /* WordsBrain.swift */,
 				CECC976C2891BC910075AA7B /* WordsData.swift */,
+				27F414042892A71600C40C42 /* Rules.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				27D3830C2890F04900B8A285 /* RulesViewController.swift in Sources */,
 				E9A96D8F2890478D00F38A49 /* SceneDelegate.swift in Sources */,
 				303362EB2891748F00876D80 /* ThemesViewController.swift in Sources */,
+				27F414052892A71600C40C42 /* Rules.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
