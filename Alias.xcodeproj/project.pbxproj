@@ -10,6 +10,11 @@
 		27D3830C2890F04900B8A285 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D3830B2890F04900B8A285 /* RulesViewController.swift */; };
 		27D6A9AB289300DC00AC46A9 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27D6A9AA289300DC00AC46A9 /* alarm_sound.mp3 */; };
 		27D6A9AD289305FD00AC46A9 /* fail-buzzer-01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27D6A9AC289305FD00AC46A9 /* fail-buzzer-01.mp3 */; };
+		27D6A9B428930A8000AC46A9 /* swipe.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27D6A9AF28930A8000AC46A9 /* swipe.wav */; };
+		27D6A9B628930A8000AC46A9 /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27D6A9B128930A8000AC46A9 /* wrong.wav */; };
+		27D6A9B728930A8000AC46A9 /* roundEnd.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27D6A9B228930A8000AC46A9 /* roundEnd.wav */; };
+		27D6A9B828930A8000AC46A9 /* right.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27D6A9B328930A8000AC46A9 /* right.wav */; };
+		27D6A9BA28930BD800AC46A9 /* lastSeconds.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27D6A9B928930BD800AC46A9 /* lastSeconds.wav */; };
 		27F414052892A71600C40C42 /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F414042892A71600C40C42 /* Rules.swift */; };
 		303362EB2891748F00876D80 /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303362EA2891748F00876D80 /* ThemesViewController.swift */; };
 		30BD8933289199CF007E2E1D /* ChoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD8932289199CF007E2E1D /* ChoiceController.swift */; };
@@ -39,6 +44,11 @@
 		27D3830B2890F04900B8A285 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		27D6A9AA289300DC00AC46A9 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 		27D6A9AC289305FD00AC46A9 /* fail-buzzer-01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "fail-buzzer-01.mp3"; sourceTree = "<group>"; };
+		27D6A9AF28930A8000AC46A9 /* swipe.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swipe.wav; sourceTree = "<group>"; };
+		27D6A9B128930A8000AC46A9 /* wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrong.wav; sourceTree = "<group>"; };
+		27D6A9B228930A8000AC46A9 /* roundEnd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = roundEnd.wav; sourceTree = "<group>"; };
+		27D6A9B328930A8000AC46A9 /* right.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = right.wav; sourceTree = "<group>"; };
+		27D6A9B928930BD800AC46A9 /* lastSeconds.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = lastSeconds.wav; path = ../../../../../../../../Music/Logic/lastSeconds.wav; sourceTree = "<group>"; };
 		27F414042892A71600C40C42 /* Rules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
 		303362EA2891748F00876D80 /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
 		30BD8932289199CF007E2E1D /* ChoiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceController.swift; sourceTree = "<group>"; };
@@ -97,6 +107,20 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		27D6A9AE28930A1700AC46A9 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				27D6A9AA289300DC00AC46A9 /* alarm_sound.mp3 */,
+				27D6A9B328930A8000AC46A9 /* right.wav */,
+				27D6A9B228930A8000AC46A9 /* roundEnd.wav */,
+				27D6A9AF28930A8000AC46A9 /* swipe.wav */,
+				27D6A9B928930BD800AC46A9 /* lastSeconds.wav */,
+				27D6A9B128930A8000AC46A9 /* wrong.wav */,
+				27D6A9AC289305FD00AC46A9 /* fail-buzzer-01.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		CECC97672891B14E0075AA7B /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,8 +174,7 @@
 				2726216928905E71002D59B0 /* View */,
 				2726216B28905E9A002D59B0 /* Controller */,
 				E9A96D952890479000F38A49 /* Assets.xcassets */,
-				27D6A9AA289300DC00AC46A9 /* alarm_sound.mp3 */,
-				27D6A9AC289305FD00AC46A9 /* fail-buzzer-01.mp3 */,
+				27D6A9AE28930A1700AC46A9 /* Sounds */,
 				E972BA1C289201F900B05AF5 /* Data */,
 				E9A96D972890479000F38A49 /* LaunchScreen.storyboard */,
 				E9A96D9A2890479000F38A49 /* Info.plist */,
@@ -221,15 +244,20 @@
 				E972BA2C2892022500B05AF5 /* 0.json in Resources */,
 				E972BA2B2892022500B05AF5 /* Normal.json in Resources */,
 				E972BA2A2892022500B05AF5 /* NewYear.json in Resources */,
+				27D6A9B728930A8000AC46A9 /* roundEnd.wav in Resources */,
+				27D6A9B628930A8000AC46A9 /* wrong.wav in Resources */,
 				E972BA272892022500B05AF5 /* Phraseological.json in Resources */,
 				E972BA2E2892022500B05AF5 /* QuickGame.json in Resources */,
 				E9A96D992890479000F38A49 /* LaunchScreen.storyboard in Resources */,
 				E972BA2D2892022500B05AF5 /* Quests.json in Resources */,
 				E972BA292892022500B05AF5 /* Hardcore.json in Resources */,
+				27D6A9B828930A8000AC46A9 /* right.wav in Resources */,
 				E9A96D962890479000F38A49 /* Assets.xcassets in Resources */,
 				27D6A9AD289305FD00AC46A9 /* fail-buzzer-01.mp3 in Resources */,
 				E972BA262892022500B05AF5 /* Summer.json in Resources */,
+				27D6A9BA28930BD800AC46A9 /* lastSeconds.wav in Resources */,
 				E922CBC828910CCA005B9D79 /* README.md in Resources */,
+				27D6A9B428930A8000AC46A9 /* swipe.wav in Resources */,
 				E9A96D942890478D00F38A49 /* Main.storyboard in Resources */,
 				E972BA282892022500B05AF5 /* Teams.json in Resources */,
 			);

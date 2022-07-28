@@ -50,7 +50,7 @@ class GameViewController: UIViewController {
     
     @IBAction func skipButton(_ sender: UIButton) {
         // показать следующее слово
-        let url = Bundle.main.url(forResource: "fail-buzzer-01", withExtension:"mp3")
+        let url = Bundle.main.url(forResource: "swipe", withExtension:"wav")
         player = try! AVAudioPlayer(contentsOf: url!)
         player.play()
         wordLable.text = game.getWord(result: button.skip)
@@ -58,6 +58,7 @@ class GameViewController: UIViewController {
         }
     
     @IBAction func yesButton(_ sender: UIButton) {
+        //плюс балл
         let url = Bundle.main.url(forResource: "right", withExtension:"wav")
         player = try! AVAudioPlayer(contentsOf: url!)
         player.play()
@@ -81,9 +82,14 @@ func updateUI() {
             let percentageProgress = Float(secondsPassed) / Float(totalTime)
             timerBar.progress = percentageProgress
             secondsPassed += 1
+            if percentageProgress == 0.95 {
+                let url = Bundle.main.url(forResource: "lastSeconds", withExtension:"wav")
+                player = try! AVAudioPlayer(contentsOf: url!)
+                player.play()
+            }
         } else {
             timer.invalidate()
-            let url = Bundle.main.url(forResource: "alarm_sound", withExtension:"mp3")
+            let url = Bundle.main.url(forResource: "roundEnd", withExtension:"wav")
             player = try! AVAudioPlayer(contentsOf: url!)
             player.play()
         }
