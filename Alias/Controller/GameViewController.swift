@@ -58,8 +58,12 @@ class GameViewController: UIViewController {
         }
     
     @IBAction func yesButton(_ sender: UIButton) {
+        let url = Bundle.main.url(forResource: "right", withExtension:"wav")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
         wordLable.text = game.getWord(result: button.yes)
         scoreLable.text = String(game.getPoints())
+
         
     }
     
