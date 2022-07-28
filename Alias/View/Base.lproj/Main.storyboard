@@ -300,11 +300,27 @@
                         <outlet property="theme3Button" destination="WRe-HA-Ouv" id="hkh-dk-upy"/>
                         <outlet property="theme4Button" destination="IuJ-2O-u8l" id="4Ec-KC-b1I"/>
                         <segue destination="ySK-Kn-4tN" kind="presentation" identifier="goBackToChoice" id="Tv6-nL-hQH"/>
+                        <segue destination="8st-Rl-Mh1" kind="presentation" identifier="goToGame" id="7Sc-VT-dq2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yrE-c4-OsV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="797" y="98"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="w10-uf-u6f">
+            <objects>
+                <viewController id="8st-Rl-Mh1" customClass="GameViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fo7-nf-baJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5Q7-bR-BT8"/>
+                        <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OrI-ti-q3x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1678" y="98"/>
         </scene>
         <!--Rules View Controller-->
         <scene sceneID="vZ0-XG-sDG">
@@ -375,7 +391,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="K5E-SN-Jjh"/>
         <segue reference="Tv6-nL-hQH"/>
     </inferredMetricsTieBreakers>
     <resources>
