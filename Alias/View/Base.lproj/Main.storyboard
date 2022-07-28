@@ -327,13 +327,113 @@
                     <view key="view" contentMode="scaleToFill" id="Fo7-nf-baJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aLl-RX-ATS" userLabel="Timer Progress View">
+                                <rect key="frame" x="20" y="64" width="374" height="21"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bonus Indicator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vb-ns-lSH">
+                                <rect key="frame" x="40" y="115" width="334" height="50"/>
+                                <color key="backgroundColor" red="0.53066647050000004" green="0.57798123359999998" blue="0.86006665230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wW1-lm-qbD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xd-AE-iFz" userLabel="Words View">
+                                <rect key="frame" x="0.0" y="240" width="414" height="416"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="GeO-UC-34c">
+                                        <rect key="frame" x="20" y="20" width="374" height="376"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81p-f4-tb5" userLabel="Word Lable">
+                                        <rect key="frame" x="174" y="126" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="GeO-UC-34c" secondAttribute="bottom" constant="20" id="69E-Yq-L1I"/>
+                                    <constraint firstAttribute="trailing" secondItem="GeO-UC-34c" secondAttribute="trailing" constant="20" id="N0c-Y0-4w9"/>
+                                    <constraint firstItem="GeO-UC-34c" firstAttribute="leading" secondItem="8xd-AE-iFz" secondAttribute="leading" constant="20" id="jQV-ff-3Ku"/>
+                                    <constraint firstItem="GeO-UC-34c" firstAttribute="top" secondItem="8xd-AE-iFz" secondAttribute="top" constant="20" id="nIe-1Z-6iH"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="ufk-VX-Pxt" userLabel="Button Stack View">
+                                <rect key="frame" x="25" y="756" width="364" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K70-Dd-rYg" userLabel="No Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.333333333333329" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Сброс">
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUW-qH-W57" userLabel="Skip Button">
+                                        <rect key="frame" x="135.33333333333334" y="0.0" width="93.333333333333343" height="100"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.98039215690000003" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Пропуск">
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCC-Rw-d9R" userLabel="Yes Button">
+                                        <rect key="frame" x="270.66666666666669" y="0.0" width="93.333333333333314" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Угадано">
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="H3P-nW-e6b"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="5Q7-bR-BT8"/>
                         <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="8xd-AE-iFz" firstAttribute="top" secondItem="8vb-ns-lSH" secondAttribute="bottom" constant="75" id="5Ov-qh-5MZ"/>
+                            <constraint firstItem="5Q7-bR-BT8" firstAttribute="trailing" secondItem="8vb-ns-lSH" secondAttribute="trailing" constant="40" id="83v-Pw-nUe"/>
+                            <constraint firstItem="8xd-AE-iFz" firstAttribute="centerY" secondItem="Fo7-nf-baJ" secondAttribute="centerY" id="NBL-oU-LeQ"/>
+                            <constraint firstItem="aLl-RX-ATS" firstAttribute="top" secondItem="5Q7-bR-BT8" secondAttribute="top" constant="20" id="Pwx-0K-M6l"/>
+                            <constraint firstItem="8vb-ns-lSH" firstAttribute="top" secondItem="aLl-RX-ATS" secondAttribute="bottom" constant="30" id="Yvl-59-kR1"/>
+                            <constraint firstItem="8xd-AE-iFz" firstAttribute="centerX" secondItem="Fo7-nf-baJ" secondAttribute="centerX" id="Z1g-Vy-9Ku"/>
+                            <constraint firstItem="ufk-VX-Pxt" firstAttribute="centerX" secondItem="Fo7-nf-baJ" secondAttribute="centerX" id="ady-T5-uKb"/>
+                            <constraint firstItem="ufk-VX-Pxt" firstAttribute="top" secondItem="8xd-AE-iFz" secondAttribute="bottom" constant="100" id="asI-nT-cmE"/>
+                            <constraint firstItem="8xd-AE-iFz" firstAttribute="trailing" secondItem="5Q7-bR-BT8" secondAttribute="trailing" id="cXv-eW-ite"/>
+                            <constraint firstItem="aLl-RX-ATS" firstAttribute="leading" secondItem="5Q7-bR-BT8" secondAttribute="leading" constant="20" id="dmF-eM-Jzo"/>
+                            <constraint firstItem="5Q7-bR-BT8" firstAttribute="trailing" secondItem="aLl-RX-ATS" secondAttribute="trailing" constant="20" id="iHD-1X-OwF"/>
+                            <constraint firstAttribute="bottom" secondItem="ufk-VX-Pxt" secondAttribute="bottom" constant="40" id="iXa-BJ-V5H"/>
+                            <constraint firstItem="8xd-AE-iFz" firstAttribute="leading" secondItem="5Q7-bR-BT8" secondAttribute="leading" id="k6A-Pr-Jdv"/>
+                            <constraint firstItem="aLl-RX-ATS" firstAttribute="centerX" secondItem="Fo7-nf-baJ" secondAttribute="centerX" id="lVK-LG-hN4"/>
+                            <constraint firstItem="8vb-ns-lSH" firstAttribute="leading" secondItem="5Q7-bR-BT8" secondAttribute="leading" constant="40" id="mCH-Zq-U6r"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OrI-ti-q3x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1678" y="98"/>
+            <point key="canvasLocation" x="1676.8115942028987" y="97.767857142857139"/>
         </scene>
         <!--Rules View Controller-->
         <scene sceneID="vZ0-XG-sDG">
@@ -432,6 +532,10 @@
     <resources>
         <image name="AliasLogo" width="170.66667175292969" height="170.66667175292969"/>
         <image name="background" width="250" height="444.66665649414062"/>
+        <image name="rectangle" width="533.33331298828125" height="533.33331298828125"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
