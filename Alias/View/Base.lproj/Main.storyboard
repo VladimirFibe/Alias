@@ -14,17 +14,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainScreenViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="N0G-wa-cfU">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AliasLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Mwn-I1-LV4">
-                                <rect key="frame" x="20" y="54" width="374" height="501"/>
+                                <rect key="frame" x="20" y="54" width="374" height="521"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="yYR-zr-cte">
-                                <rect key="frame" x="10" y="605" width="394" height="187"/>
+                                <rect key="frame" x="10" y="625" width="394" height="187"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20G-rz-d7L">
                                         <rect key="frame" x="50" y="0.0" width="294" height="70"/>
@@ -203,7 +203,7 @@
                         <outlet property="personsLabel" destination="l7L-oK-ZFV" id="jk1-O8-34g"/>
                         <outlet property="roundsLabel" destination="DcC-WS-3hq" id="Lti-z8-gLM"/>
                         <segue destination="wgA-B9-RMN" kind="presentation" identifier="goToThemes" modalPresentationStyle="fullScreen" id="K5E-SN-Jjh"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="goBackToMain" id="Iky-IC-GXx"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="goBackToMain" modalPresentationStyle="fullScreen" id="Iky-IC-GXx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s6U-ph-pF1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -218,62 +218,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP3-JQ-Hmh">
-                                <rect key="frame" x="20" y="68" width="374" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemYellowColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Первая тема">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="55"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="CqY-nJ-HiA"/>
-                                    <action selector="theme1Pressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="Uir-vE-tGT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFn-a0-nPO">
-                                <rect key="frame" x="20" y="234" width="374" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemYellowColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Вторая тема">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="55"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="pe2-p3-1TI"/>
-                                    <action selector="theme2Pressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="1f1-9I-6uM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRe-HA-Ouv">
-                                <rect key="frame" x="20" y="407" width="374" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemYellowColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Третья тема">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="55"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="t8d-wW-5kc"/>
-                                    <action selector="theme3Pressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="7gw-HO-gdW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuJ-2O-u8l">
-                                <rect key="frame" x="20" y="577" width="374" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemYellowColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Четвертая тема">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="55"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="7Gv-u4-2AD"/>
-                                    <action selector="theme4Pressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="kUb-F1-JvC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhh-iG-plh">
-                                <rect key="frame" x="60" y="738" width="294" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="tLV-jS-gKO">
+                                <rect key="frame" x="10" y="64" width="394" height="708"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP3-JQ-Hmh">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="152.33333333333334"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Первая тема">
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="45"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="CqY-nJ-HiA"/>
+                                            <action selector="theme1Pressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="Uir-vE-tGT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFn-a0-nPO">
+                                        <rect key="frame" x="0.0" y="185.33333333333331" width="394" height="152.33333333333331"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Вторая тема">
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="45"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="pe2-p3-1TI"/>
+                                            <action selector="theme2Pressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="1f1-9I-6uM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRe-HA-Ouv">
+                                        <rect key="frame" x="0.0" y="370.66666666666669" width="394" height="152.00000000000006"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Третья тема">
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="45"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="t8d-wW-5kc"/>
+                                            <action selector="theme3Pressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="7gw-HO-gdW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuJ-2O-u8l">
+                                        <rect key="frame" x="0.0" y="555.66666666666663" width="394" height="152.33333333333337"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Четвертая тема">
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="45"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="7Gv-u4-2AD"/>
+                                            <action selector="theme4Pressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="kUb-F1-JvC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhh-iG-plh">
+                                <rect key="frame" x="57" y="792" width="300" height="50"/>
                                 <color key="backgroundColor" red="0.62480407950000005" green="0.25178578499999998" blue="0.69073241949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Bsn-5m-qrB"/>
+                                    <constraint firstAttribute="height" constant="50" id="wp1-Ga-oUQ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="44"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Назад">
@@ -292,6 +296,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lE7-M9-kpi"/>
                         <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tLV-jS-gKO" secondAttribute="trailing" constant="10" id="AM5-uc-X1I"/>
+                            <constraint firstItem="tLV-jS-gKO" firstAttribute="leading" secondItem="lE7-M9-kpi" secondAttribute="leading" constant="10" id="F8d-uy-SmO"/>
+                            <constraint firstItem="uhh-iG-plh" firstAttribute="centerX" secondItem="9pt-9Z-nqb" secondAttribute="centerX" id="LOG-rd-OVW"/>
+                            <constraint firstItem="tLV-jS-gKO" firstAttribute="top" secondItem="lE7-M9-kpi" secondAttribute="top" constant="20" id="Wt8-Og-mBm"/>
+                            <constraint firstItem="lE7-M9-kpi" firstAttribute="bottom" secondItem="uhh-iG-plh" secondAttribute="bottom" constant="20" id="eLd-bp-UMF"/>
+                            <constraint firstItem="uhh-iG-plh" firstAttribute="top" secondItem="tLV-jS-gKO" secondAttribute="bottom" constant="20" id="lBI-KA-Fxl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="a4i-ky-Qdf"/>
                     <connections>
@@ -300,7 +312,7 @@
                         <outlet property="theme2Button" destination="CFn-a0-nPO" id="W2q-Cf-eYN"/>
                         <outlet property="theme3Button" destination="WRe-HA-Ouv" id="hkh-dk-upy"/>
                         <outlet property="theme4Button" destination="IuJ-2O-u8l" id="4Ec-KC-b1I"/>
-                        <segue destination="ySK-Kn-4tN" kind="presentation" identifier="goBackToChoice" id="Tv6-nL-hQH"/>
+                        <segue destination="ySK-Kn-4tN" kind="presentation" identifier="goBackToChoice" modalPresentationStyle="fullScreen" id="Tv6-nL-hQH"/>
                         <segue destination="8st-Rl-Mh1" kind="presentation" identifier="goToGame" modalPresentationStyle="fullScreen" id="7Sc-VT-dq2"/>
                     </connections>
                 </viewController>
@@ -415,7 +427,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="95S-Ll-tic"/>
+        <segue reference="Tv6-nL-hQH"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AliasLogo" width="170.66667175292969" height="170.66667175292969"/>
