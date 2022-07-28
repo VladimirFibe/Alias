@@ -44,14 +44,17 @@ class GameViewController: UIViewController {
     
     @IBAction func skipButton(_ sender: UIButton) {
         // показать следующее слово
-        let url = Bundle.main.url(forResource: "fail-buzzer-01", withExtension:"mp3")
+        let url = Bundle.main.url(forResource: "swipe", withExtension:"wav")
         player = try! AVAudioPlayer(contentsOf: url!)
         player.play()
         }
     
     @IBAction func yesButton(_ sender: UIButton) {
         //плюс балл
-         score += 1
+        let url = Bundle.main.url(forResource: "right", withExtension:"wav")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
+        score += 1
     }
 
 
@@ -74,9 +77,14 @@ func updateUI() {
             print(percentageProgress)
             timerBar.progress = percentageProgress
             secondsPassed += 1
+            if percentageProgress == 0.95 {
+                let url = Bundle.main.url(forResource: "lastSeconds", withExtension:"wav")
+                player = try! AVAudioPlayer(contentsOf: url!)
+                player.play()
+            }
         } else {
             timer.invalidate()
-            let url = Bundle.main.url(forResource: "alarm_sound", withExtension:"mp3")
+            let url = Bundle.main.url(forResource: "roundEnd", withExtension:"wav")
             player = try! AVAudioPlayer(contentsOf: url!)
             player.play()
         }
