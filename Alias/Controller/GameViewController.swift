@@ -33,6 +33,9 @@ class GameViewController: UIViewController {
     
     @IBAction func failButton(_ sender: UIButton) {
         // минус балл
+        let url = Bundle.main.url(forResource: "fail-buzzer-01", withExtension:"mp3")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
         score -= 1
         if score < 0 {
             score = 0
@@ -41,6 +44,9 @@ class GameViewController: UIViewController {
     
     @IBAction func skipButton(_ sender: UIButton) {
         // показать следующее слово
+        let url = Bundle.main.url(forResource: "fail-buzzer-01", withExtension:"mp3")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
         }
     
     @IBAction func yesButton(_ sender: UIButton) {

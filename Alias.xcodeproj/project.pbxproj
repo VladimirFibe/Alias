@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		27D3830C2890F04900B8A285 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D3830B2890F04900B8A285 /* RulesViewController.swift */; };
 		27D6A9AB289300DC00AC46A9 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27D6A9AA289300DC00AC46A9 /* alarm_sound.mp3 */; };
+		27D6A9AD289305FD00AC46A9 /* fail-buzzer-01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 27D6A9AC289305FD00AC46A9 /* fail-buzzer-01.mp3 */; };
 		27F414052892A71600C40C42 /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F414042892A71600C40C42 /* Rules.swift */; };
 		303362EB2891748F00876D80 /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303362EA2891748F00876D80 /* ThemesViewController.swift */; };
 		30BD8933289199CF007E2E1D /* ChoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD8932289199CF007E2E1D /* ChoiceController.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		27D3830B2890F04900B8A285 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		27D6A9AA289300DC00AC46A9 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
+		27D6A9AC289305FD00AC46A9 /* fail-buzzer-01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "fail-buzzer-01.mp3"; sourceTree = "<group>"; };
 		27F414042892A71600C40C42 /* Rules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
 		303362EA2891748F00876D80 /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
 		30BD8932289199CF007E2E1D /* ChoiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				2726216B28905E9A002D59B0 /* Controller */,
 				E9A96D952890479000F38A49 /* Assets.xcassets */,
 				27D6A9AA289300DC00AC46A9 /* alarm_sound.mp3 */,
+				27D6A9AC289305FD00AC46A9 /* fail-buzzer-01.mp3 */,
 				E972BA1C289201F900B05AF5 /* Data */,
 				E9A96D972890479000F38A49 /* LaunchScreen.storyboard */,
 				E9A96D9A2890479000F38A49 /* Info.plist */,
@@ -221,6 +224,7 @@
 				E972BA2D2892022500B05AF5 /* Quests.json in Resources */,
 				E972BA292892022500B05AF5 /* Hardcore.json in Resources */,
 				E9A96D962890479000F38A49 /* Assets.xcassets in Resources */,
+				27D6A9AD289305FD00AC46A9 /* fail-buzzer-01.mp3 in Resources */,
 				E972BA262892022500B05AF5 /* Summer.json in Resources */,
 				E922CBC828910CCA005B9D79 /* README.md in Resources */,
 				E9A96D942890478D00F38A49 /* Main.storyboard in Resources */,
