@@ -12,6 +12,7 @@ class GameViewController: UIViewController {
 
     @IBOutlet weak var timerBar: UIProgressView!
     @IBOutlet weak var wordLable: UILabel!
+    @IBOutlet weak var scoreLable: UILabel!
     
     let roundTimer = 60
     var timer = Timer()
@@ -19,6 +20,7 @@ class GameViewController: UIViewController {
     var secondsPassed = 0
     var player: AVAudioPlayer!
     
+    var score = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,17 +29,30 @@ class GameViewController: UIViewController {
     
     
     
-    @IBAction func skipButton(_ sender: UIButton) {
-    }
+    
     
     @IBAction func failButton(_ sender: UIButton) {
+        // минус балл
+        score -= 1
+        if score < 0 {
+            score = 0
+        }
     }
     
+    @IBAction func skipButton(_ sender: UIButton) {
+        // показать следующее слово
+        }
+    
     @IBAction func yesButton(_ sender: UIButton) {
+        //плюс балл
+         score += 1
     }
 
 
 
+    
+    
+    
 func updateUI() {
     timer.invalidate()
     totalTime = roundTimer
@@ -47,6 +62,7 @@ func updateUI() {
     
 }
     @objc func updateTimer() {
+        scoreLable.text = String(score)
         if secondsPassed < totalTime {
             let percentageProgress = Float(secondsPassed) / Float(totalTime)
             print(percentageProgress)

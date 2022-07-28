@@ -330,18 +330,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aLl-RX-ATS" userLabel="Timer Progress View">
-                                <rect key="frame" x="20" y="64" width="374" height="21"/>
+                                <rect key="frame" x="20" y="64" width="374" height="4"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bonus Indicator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vb-ns-lSH">
-                                <rect key="frame" x="40" y="115" width="334" height="50"/>
-                                <color key="backgroundColor" red="0.53066647050000004" green="0.57798123359999998" blue="0.86006665230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="wW1-lm-qbD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xd-AE-iFz" userLabel="Words View">
                                 <rect key="frame" x="0.0" y="240" width="414" height="416"/>
                                 <subviews>
@@ -423,15 +413,36 @@
                                     <constraint firstAttribute="height" constant="100" id="H3P-nW-e6b"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VHG-FF-BXO">
+                                <rect key="frame" x="20" y="88" width="374" height="77"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bonus Indicator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vb-ns-lSH">
+                                        <rect key="frame" x="0.0" y="13.666666666666671" width="183" height="50"/>
+                                        <color key="backgroundColor" red="0.53066647050000004" green="0.57798123359999998" blue="0.86006665230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="wW1-lm-qbD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6P-oN-8eI" userLabel="Score Label">
+                                        <rect key="frame" x="191" y="21" width="183" height="35"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="32"/>
+                                        <color key="textColor" red="0.3294117647" green="0.086274509799999996" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Q7-bR-BT8"/>
                         <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="8xd-AE-iFz" firstAttribute="top" secondItem="8vb-ns-lSH" secondAttribute="bottom" constant="75" id="5Ov-qh-5MZ"/>
-                            <constraint firstItem="5Q7-bR-BT8" firstAttribute="trailing" secondItem="8vb-ns-lSH" secondAttribute="trailing" constant="40" id="83v-Pw-nUe"/>
+                            <constraint firstItem="8xd-AE-iFz" firstAttribute="top" secondItem="VHG-FF-BXO" secondAttribute="bottom" constant="75" id="N7c-oU-sZs"/>
                             <constraint firstItem="8xd-AE-iFz" firstAttribute="centerY" secondItem="Fo7-nf-baJ" secondAttribute="centerY" id="NBL-oU-LeQ"/>
+                            <constraint firstItem="VHG-FF-BXO" firstAttribute="leading" secondItem="5Q7-bR-BT8" secondAttribute="leading" constant="20" id="OvS-Lu-y93"/>
                             <constraint firstItem="aLl-RX-ATS" firstAttribute="top" secondItem="5Q7-bR-BT8" secondAttribute="top" constant="20" id="Pwx-0K-M6l"/>
-                            <constraint firstItem="8vb-ns-lSH" firstAttribute="top" secondItem="aLl-RX-ATS" secondAttribute="bottom" constant="30" id="Yvl-59-kR1"/>
+                            <constraint firstItem="VHG-FF-BXO" firstAttribute="top" secondItem="aLl-RX-ATS" secondAttribute="bottom" constant="20" id="VGh-TM-A3i"/>
                             <constraint firstItem="8xd-AE-iFz" firstAttribute="centerX" secondItem="Fo7-nf-baJ" secondAttribute="centerX" id="Z1g-Vy-9Ku"/>
                             <constraint firstItem="ufk-VX-Pxt" firstAttribute="centerX" secondItem="Fo7-nf-baJ" secondAttribute="centerX" id="ady-T5-uKb"/>
                             <constraint firstItem="ufk-VX-Pxt" firstAttribute="top" secondItem="8xd-AE-iFz" secondAttribute="bottom" constant="100" id="asI-nT-cmE"/>
@@ -441,10 +452,11 @@
                             <constraint firstAttribute="bottom" secondItem="ufk-VX-Pxt" secondAttribute="bottom" constant="40" id="iXa-BJ-V5H"/>
                             <constraint firstItem="8xd-AE-iFz" firstAttribute="leading" secondItem="5Q7-bR-BT8" secondAttribute="leading" id="k6A-Pr-Jdv"/>
                             <constraint firstItem="aLl-RX-ATS" firstAttribute="centerX" secondItem="Fo7-nf-baJ" secondAttribute="centerX" id="lVK-LG-hN4"/>
-                            <constraint firstItem="8vb-ns-lSH" firstAttribute="leading" secondItem="5Q7-bR-BT8" secondAttribute="leading" constant="40" id="mCH-Zq-U6r"/>
+                            <constraint firstItem="5Q7-bR-BT8" firstAttribute="trailing" secondItem="VHG-FF-BXO" secondAttribute="trailing" constant="20" id="wPQ-3k-kjQ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="scoreLable" destination="j6P-oN-8eI" id="rdJ-1d-dIf"/>
                         <outlet property="timerBar" destination="aLl-RX-ATS" id="nro-Nb-XdB"/>
                         <outlet property="wordLable" destination="81p-f4-tb5" id="t8L-gi-qod"/>
                     </connections>
