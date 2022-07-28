@@ -14,11 +14,12 @@
 		27D6A9B628930A8000AC46A9 /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27D6A9B128930A8000AC46A9 /* wrong.wav */; };
 		27D6A9B728930A8000AC46A9 /* roundEnd.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27D6A9B228930A8000AC46A9 /* roundEnd.wav */; };
 		27D6A9B828930A8000AC46A9 /* right.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27D6A9B328930A8000AC46A9 /* right.wav */; };
-		27D6A9BA28930BD800AC46A9 /* lastSeconds.wav in Resources */ = {isa = PBXBuildFile; fileRef = 27D6A9B928930BD800AC46A9 /* lastSeconds.wav */; };
 		27F414052892A71600C40C42 /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F414042892A71600C40C42 /* Rules.swift */; };
 		303362EB2891748F00876D80 /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303362EA2891748F00876D80 /* ThemesViewController.swift */; };
 		30BD8933289199CF007E2E1D /* ChoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD8932289199CF007E2E1D /* ChoiceController.swift */; };
 		30BD89352892A4F7007E2E1D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD89342892A4F7007E2E1D /* GameViewController.swift */; };
+		CE958E9D28933368006683C9 /* Quests.json in Resources */ = {isa = PBXBuildFile; fileRef = CE958E9C28933368006683C9 /* Quests.json */; };
+		CE958E9F289333E2006683C9 /* Quests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE958E9E289333E2006683C9 /* Quests.swift */; };
 		CECC97692891B18E0075AA7B /* WordsBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC97682891B18E0075AA7B /* WordsBrain.swift */; };
 		CECC976D2891BC910075AA7B /* WordsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC976C2891BC910075AA7B /* WordsData.swift */; };
 		CECC977528930DD10075AA7B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC977428930DD10075AA7B /* Game.swift */; };
@@ -30,7 +31,6 @@
 		E972BA2A2892022500B05AF5 /* NewYear.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA212892022500B05AF5 /* NewYear.json */; };
 		E972BA2B2892022500B05AF5 /* Normal.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA222892022500B05AF5 /* Normal.json */; };
 		E972BA2C2892022500B05AF5 /* 0.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA232892022500B05AF5 /* 0.json */; };
-		E972BA2D2892022500B05AF5 /* Quests.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA242892022500B05AF5 /* Quests.json */; };
 		E972BA2E2892022500B05AF5 /* QuickGame.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA252892022500B05AF5 /* QuickGame.json */; };
 		E9A96D8D2890478D00F38A49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A96D8C2890478D00F38A49 /* AppDelegate.swift */; };
 		E9A96D8F2890478D00F38A49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A96D8E2890478D00F38A49 /* SceneDelegate.swift */; };
@@ -48,11 +48,12 @@
 		27D6A9B128930A8000AC46A9 /* wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrong.wav; sourceTree = "<group>"; };
 		27D6A9B228930A8000AC46A9 /* roundEnd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = roundEnd.wav; sourceTree = "<group>"; };
 		27D6A9B328930A8000AC46A9 /* right.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = right.wav; sourceTree = "<group>"; };
-		27D6A9B928930BD800AC46A9 /* lastSeconds.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = lastSeconds.wav; path = ../../../../../../../../Music/Logic/lastSeconds.wav; sourceTree = "<group>"; };
 		27F414042892A71600C40C42 /* Rules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
 		303362EA2891748F00876D80 /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
 		30BD8932289199CF007E2E1D /* ChoiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceController.swift; sourceTree = "<group>"; };
 		30BD89342892A4F7007E2E1D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CE958E9C28933368006683C9 /* Quests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Quests.json; path = ../../../../../../Users/user/Downloads/Quests.json; sourceTree = "<group>"; };
+		CE958E9E289333E2006683C9 /* Quests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quests.swift; sourceTree = "<group>"; };
 		CECC97682891B18E0075AA7B /* WordsBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsBrain.swift; sourceTree = "<group>"; };
 		CECC976C2891BC910075AA7B /* WordsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsData.swift; sourceTree = "<group>"; };
 		CECC977428930DD10075AA7B /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		E972BA212892022500B05AF5 /* NewYear.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NewYear.json; sourceTree = "<group>"; };
 		E972BA222892022500B05AF5 /* Normal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Normal.json; sourceTree = "<group>"; };
 		E972BA232892022500B05AF5 /* 0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0.json; sourceTree = "<group>"; };
-		E972BA242892022500B05AF5 /* Quests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Quests.json; sourceTree = "<group>"; };
 		E972BA252892022500B05AF5 /* QuickGame.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuickGame.json; sourceTree = "<group>"; };
 		E9A96D892890478D00F38A49 /* Alias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A96D8C2890478D00F38A49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +114,6 @@
 				27D6A9B328930A8000AC46A9 /* right.wav */,
 				27D6A9B228930A8000AC46A9 /* roundEnd.wav */,
 				27D6A9AF28930A8000AC46A9 /* swipe.wav */,
-				27D6A9B928930BD800AC46A9 /* lastSeconds.wav */,
 				27D6A9B128930A8000AC46A9 /* wrong.wav */,
 				27D6A9AC289305FD00AC46A9 /* fail-buzzer-01.mp3 */,
 			);
@@ -128,6 +127,7 @@
 				CECC976C2891BC910075AA7B /* WordsData.swift */,
 				27F414042892A71600C40C42 /* Rules.swift */,
 				CECC977428930DD10075AA7B /* Game.swift */,
+				CE958E9E289333E2006683C9 /* Quests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -138,9 +138,9 @@
 				E972BA232892022500B05AF5 /* 0.json */,
 				E972BA202892022500B05AF5 /* Hardcore.json */,
 				E972BA212892022500B05AF5 /* NewYear.json */,
+				CE958E9C28933368006683C9 /* Quests.json */,
 				E972BA222892022500B05AF5 /* Normal.json */,
 				E972BA1E2892022500B05AF5 /* Phraseological.json */,
-				E972BA242892022500B05AF5 /* Quests.json */,
 				E972BA252892022500B05AF5 /* QuickGame.json */,
 				E972BA1D2892022500B05AF5 /* Summer.json */,
 				E972BA1F2892022500B05AF5 /* Teams.json */,
@@ -248,14 +248,13 @@
 				27D6A9B628930A8000AC46A9 /* wrong.wav in Resources */,
 				E972BA272892022500B05AF5 /* Phraseological.json in Resources */,
 				E972BA2E2892022500B05AF5 /* QuickGame.json in Resources */,
+				CE958E9D28933368006683C9 /* Quests.json in Resources */,
 				E9A96D992890479000F38A49 /* LaunchScreen.storyboard in Resources */,
-				E972BA2D2892022500B05AF5 /* Quests.json in Resources */,
 				E972BA292892022500B05AF5 /* Hardcore.json in Resources */,
 				27D6A9B828930A8000AC46A9 /* right.wav in Resources */,
 				E9A96D962890479000F38A49 /* Assets.xcassets in Resources */,
 				27D6A9AD289305FD00AC46A9 /* fail-buzzer-01.mp3 in Resources */,
 				E972BA262892022500B05AF5 /* Summer.json in Resources */,
-				27D6A9BA28930BD800AC46A9 /* lastSeconds.wav in Resources */,
 				E922CBC828910CCA005B9D79 /* README.md in Resources */,
 				27D6A9B428930A8000AC46A9 /* swipe.wav in Resources */,
 				E9A96D942890478D00F38A49 /* Main.storyboard in Resources */,
@@ -270,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE958E9F289333E2006683C9 /* Quests.swift in Sources */,
 				30BD8933289199CF007E2E1D /* ChoiceController.swift in Sources */,
 				E9A96D912890478D00F38A49 /* MainScreenViewController.swift in Sources */,
 				E9A96D8D2890478D00F38A49 /* AppDelegate.swift in Sources */,

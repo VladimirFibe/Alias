@@ -13,6 +13,9 @@ class GameViewController: UIViewController {
     @IBOutlet weak var timerBar: UIProgressView!
     @IBOutlet weak var wordLable: UILabel!
     @IBOutlet weak var scoreLable: UILabel!
+    @IBOutlet var buttonSkip: UIButton!
+    @IBOutlet var buttonYes: UIButton!
+    @IBOutlet var buttonFail: UIButton!
     
     let roundTimer = 60
     var timer = Timer()
@@ -45,6 +48,7 @@ class GameViewController: UIViewController {
         player.play()
         wordLable.text = game.getWord(result: button.fail)
         scoreLable.text = String(game.getPoints())
+        actionOn()
     }
     
     
@@ -55,6 +59,7 @@ class GameViewController: UIViewController {
         player.play()
         wordLable.text = game.getWord(result: button.skip)
         scoreLable.text = String(game.getPoints())
+        actionOn()
         }
     
     @IBAction func yesButton(_ sender: UIButton) {
@@ -64,8 +69,22 @@ class GameViewController: UIViewController {
         player.play()
         wordLable.text = game.getWord(result: button.yes)
         scoreLable.text = String(game.getPoints())
+        actionOn()
 
         
+    }
+    
+    func actionOn(){
+        if game.getActionOn(){
+            buttonSkip.isHidden = true
+            buttonYes.setTitle("Согласен", for: .normal)
+            buttonFail.setTitle("Отказ", for: .normal)
+        }
+        else {
+            buttonSkip.isHidden = false
+            buttonYes.setTitle("Угадано", for: .normal)
+            buttonFail.setTitle("Пропуск", for: .normal)
+        }
     }
     
 
@@ -83,7 +102,7 @@ func updateUI() {
             timerBar.progress = percentageProgress
             secondsPassed += 1
             if percentageProgress == 0.95 {
-                let url = Bundle.main.url(forResource: "lastSeconds", withExtension:"wav")
+                let url = Bundle.main.url(forResource: "roundEnd", withExtension:"wav")
                 player = try! AVAudioPlayer(contentsOf: url!)
                 player.play()
             }

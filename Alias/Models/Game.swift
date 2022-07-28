@@ -18,7 +18,8 @@ struct Game{
     var pointsOfRounds = [Int:Int]() //подсчет баллов
     var currentRound = 1 //номер текущего раунда
     var currentIndexOfWord = 0 //индекс текущего слова в массиве
-    let chance = 30 //шанс что выпадет не слово, а действие
+    let chance = 10 //шанс что выпадет не слово, а действие
+    var actionOn = false //индикатор включенного действия
     
     mutating func createGame(topic: String, round: Int){
         gameArray = Words().defineWordsArray(topic: topic).shuffled()
@@ -31,11 +32,14 @@ struct Game{
     
     mutating func getWord(result: button) -> String{
         var word = ""
+        var points = 1
+        if actionOn { points = 3 } //если до этого было действие, то 3 балла
+        
         switch result {  //в зависимости от правильности ответа прибавляется либо вычитается балл
         case .yes:
-            pointsOfRounds[currentRound]! += 1
+            pointsOfRounds[currentRound]! += points
         case .fail:
-            if pointsOfRounds[currentRound]! != 0 { pointsOfRounds[currentRound]! -= 1}
+            if pointsOfRounds[currentRound]! != 0 { pointsOfRounds[currentRound]! -= points}
         case .skip:
             print("")
         }
@@ -48,6 +52,7 @@ struct Game{
             {
                 currentIndexOfWord = 0
             }
+            actionOn = false
         }
         else{
             
@@ -58,9 +63,11 @@ struct Game{
         return word
     }
     
-    func randomAction() -> String {
+    mutating func randomAction() -> String {
         //обращение к модельке действия будет и выбор оттуда рандомного действия
-        return "а вот и действие"
+        let quest = Quests().questsArray.shuffled()[0]
+        actionOn = true
+        return quest
     }
     
     mutating func changedCurrentRound(){ //когда раунд заканчивается, переключаемся на следующий
@@ -68,10 +75,16 @@ struct Game{
         
     }
     
-    func getPoints()-> Int{
+    func getPoints()-> Int{ //возращает баллы за раунд
         return pointsOfRounds[currentRound] ?? 0
         
         
+    }
+    
+    func getActionOn()->Bool //возвращает статус, действие сейчас или нет
+    {
+        
+        return actionOn
     }
     
     
