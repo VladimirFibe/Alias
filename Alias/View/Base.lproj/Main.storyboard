@@ -213,7 +213,7 @@
         <!--Themes View Controller-->
         <scene sceneID="c0G-ma-vJR">
             <objects>
-                <viewController id="wgA-B9-RMN" customClass="ThemesViewController" customModule="Alias" sceneMemberID="viewController">
+                <viewController id="wgA-B9-RMN" customClass="ThemesViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9pt-9Z-nqb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -382,6 +382,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="failButton:" destination="8st-Rl-Mh1" eventType="touchUpInside" id="z1H-ee-lvt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUW-qH-W57" userLabel="Skip Button">
                                         <rect key="frame" x="135.33333333333334" y="0.0" width="93.333333333333343" height="100"/>
@@ -395,6 +398,9 @@
                                                 <integer key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="skipButton:" destination="8st-Rl-Mh1" eventType="touchUpInside" id="xPR-D5-5VA"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCC-Rw-d9R" userLabel="Yes Button">
                                         <rect key="frame" x="270.66666666666669" y="0.0" width="93.333333333333314" height="100"/>
@@ -408,6 +414,9 @@
                                                 <integer key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="yesButton:" destination="8st-Rl-Mh1" eventType="touchUpInside" id="QMA-SH-WgT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -435,6 +444,10 @@
                             <constraint firstItem="8vb-ns-lSH" firstAttribute="leading" secondItem="5Q7-bR-BT8" secondAttribute="leading" constant="40" id="mCH-Zq-U6r"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="timerBar" destination="aLl-RX-ATS" id="nro-Nb-XdB"/>
+                        <outlet property="wordLable" destination="81p-f4-tb5" id="t8L-gi-qod"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OrI-ti-q3x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
