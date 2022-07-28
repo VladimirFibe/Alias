@@ -93,8 +93,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="Y7t-dQ-KVM" kind="presentation" identifier="goToRules" id="rjM-I1-5Ha"/>
-                        <segue destination="ySK-Kn-4tN" kind="presentation" identifier="goToChoice" id="95S-Ll-tic"/>
+                        <segue destination="Y7t-dQ-KVM" kind="presentation" identifier="goToRules" modalPresentationStyle="fullScreen" id="rjM-I1-5Ha"/>
+                        <segue destination="ySK-Kn-4tN" kind="presentation" identifier="goToChoice" modalPresentationStyle="fullScreen" id="95S-Ll-tic"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -106,7 +106,7 @@
             <objects>
                 <viewController id="ySK-Kn-4tN" customClass="ChoiceController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gJz-iR-PIM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8c-Bn-mFd">
@@ -202,7 +202,7 @@
                     <connections>
                         <outlet property="personsLabel" destination="l7L-oK-ZFV" id="jk1-O8-34g"/>
                         <outlet property="roundsLabel" destination="DcC-WS-3hq" id="Lti-z8-gLM"/>
-                        <segue destination="wgA-B9-RMN" kind="presentation" identifier="goToThemes" id="K5E-SN-Jjh"/>
+                        <segue destination="wgA-B9-RMN" kind="presentation" identifier="goToThemes" modalPresentationStyle="fullScreen" id="K5E-SN-Jjh"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="goBackToMain" id="Iky-IC-GXx"/>
                     </connections>
                 </viewController>
@@ -215,7 +215,7 @@
             <objects>
                 <viewController id="wgA-B9-RMN" customClass="ThemesViewController" customModule="Alias" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9pt-9Z-nqb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP3-JQ-Hmh">
@@ -293,6 +293,7 @@
                         <viewLayoutGuide key="safeArea" id="lE7-M9-kpi"/>
                         <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="a4i-ky-Qdf"/>
                     <connections>
                         <outlet property="backButton" destination="uhh-iG-plh" id="vnm-ed-LHH"/>
                         <outlet property="theme1Button" destination="eP3-JQ-Hmh" id="z5z-r2-wKG"/>
@@ -300,7 +301,7 @@
                         <outlet property="theme3Button" destination="WRe-HA-Ouv" id="hkh-dk-upy"/>
                         <outlet property="theme4Button" destination="IuJ-2O-u8l" id="4Ec-KC-b1I"/>
                         <segue destination="ySK-Kn-4tN" kind="presentation" identifier="goBackToChoice" id="Tv6-nL-hQH"/>
-                        <segue destination="8st-Rl-Mh1" kind="presentation" identifier="goToGame" id="7Sc-VT-dq2"/>
+                        <segue destination="8st-Rl-Mh1" kind="presentation" identifier="goToGame" modalPresentationStyle="fullScreen" id="7Sc-VT-dq2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yrE-c4-OsV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -312,7 +313,7 @@
             <objects>
                 <viewController id="8st-Rl-Mh1" customClass="GameViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fo7-nf-baJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="5Q7-bR-BT8"/>
                         <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -327,7 +328,7 @@
             <objects>
                 <viewController id="Y7t-dQ-KVM" customClass="RulesViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="asg-EI-jR7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Правила игры" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFQ-g7-5JE">
@@ -340,7 +341,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rB2-za-RYU">
-                                <rect key="frame" x="100" y="782" width="214" height="40"/>
+                                <rect key="frame" x="100" y="802" width="214" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.80392156859999997" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Ct3-Ua-YsQ"/>
@@ -358,7 +359,7 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HV-E4-gA1">
-                                <rect key="frame" x="10" y="99" width="394" height="673"/>
+                                <rect key="frame" x="10" y="99" width="394" height="693"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90S-jc-UyT" userLabel="Rules View">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="22"/>
