@@ -80,8 +80,8 @@
 			children = (
 				E9A96D902890478D00F38A49 /* MainScreenViewController.swift */,
 				27D3830B2890F04900B8A285 /* RulesViewController.swift */,
-				303362EA2891748F00876D80 /* ThemesViewController.swift */,
 				30BD8932289199CF007E2E1D /* ChoiceController.swift */,
+				303362EA2891748F00876D80 /* ThemesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

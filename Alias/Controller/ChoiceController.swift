@@ -11,6 +11,14 @@ class ChoiceController: UIViewController {
     
     @IBOutlet weak var personsLabel: UILabel!
     @IBOutlet weak var roundsLabel: UILabel!
+    @IBAction func teamSlider(_ sender: UISlider) {
+        let team = String(format: "%.f", sender.value)
+        personsLabel.text = "\(team)"
+    }
+    @IBAction func roundSlider(_ sender: UISlider) {
+        let round = String(format: "%.f", sender.value)
+        roundsLabel.text = "\(round)"
+    }
     
     
     @IBAction func backToMainPressed(_ sender: UIButton) {
@@ -22,9 +30,6 @@ class ChoiceController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        personsLabel.text = "Количество команд"
-        roundsLabel.text = "Количество раундов"
 
         // Do any additional setup after loading the view.
     }
