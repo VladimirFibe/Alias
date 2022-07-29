@@ -439,6 +439,7 @@
                         <outlet property="timerBar" destination="aLl-RX-ATS" id="nro-Nb-XdB"/>
                         <outlet property="wordLable" destination="81p-f4-tb5" id="t8L-gi-qod"/>
                         <segue destination="a7P-v4-ceP" kind="presentation" identifier="goJoke" modalPresentationStyle="fullScreen" id="gra-Pc-Nro"/>
+                        <segue destination="lYa-Rd-Cc2" kind="presentation" identifier="results" modalPresentationStyle="fullScreen" id="2dh-7F-fC8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OrI-ti-q3x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -502,6 +503,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TTK-za-NAo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2612" y="98"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="eAL-9E-dUX">
+            <objects>
+                <viewController id="lYa-Rd-Cc2" customClass="ResultsViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ALE-Pi-vLB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMi-oU-gRU">
+                                <rect key="frame" x="60" y="747" width="294" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.77532702679999999" green="0.42728552219999999" blue="0.28115850689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="44"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Меню">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.98039215690000003" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backToMainButton:" destination="wgA-B9-RMN" eventType="touchUpInside" id="4jy-Wa-jMN"/>
+                                    <action selector="goToThemesPressed:" destination="ySK-Kn-4tN" eventType="touchUpInside" id="sv4-sa-nCU"/>
+                                    <action selector="rulesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qxc-TF-tK2"/>
+                                    <action selector="start:" destination="a7P-v4-ceP" eventType="touchUpInside" id="icH-1V-S3D"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="VIX-GI-Uda"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="результаты" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swg-xL-5zx">
+                                <rect key="frame" x="20" y="244" width="374" height="453"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1ee-Gc-ccM"/>
+                        <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="textResults" destination="Swg-xL-5zx" id="fU6-4P-u7R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qma-iy-Fnk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2509" y="872"/>
         </scene>
         <!--Rules View Controller-->
         <scene sceneID="vZ0-XG-sDG">
@@ -596,6 +646,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Tv6-nL-hQH"/>
+        <segue reference="VIX-GI-Uda"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AliasLogo" width="170.66667175292969" height="170.66667175292969"/>
