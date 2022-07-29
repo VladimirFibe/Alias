@@ -34,7 +34,7 @@ class GameViewController: UIViewController {
         let topic = topics.newYear.rawValue //выбранная тема - нужно подгрузить из тем
         game.createGame(topic: topic, round: round)
         wordLable.text = game.getWord(result: button.skip)
-        
+        actionOn()
     }
     
     
@@ -87,6 +87,18 @@ class GameViewController: UIViewController {
         }
     }
     
+    func roundEnd(){
+        game.changedCurrentRound()
+        print("раунд закончился")
+        performSegue(withIdentifier: "goJoke", sender: "nil")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "goJoke" else { return }
+        guard let destination = segue.destination as? JokeViewController else { return }
+        destination.game = game
+        print("tttt")
+    }
 
 func updateUI() {
     timer.invalidate()
@@ -111,6 +123,7 @@ func updateUI() {
             let url = Bundle.main.url(forResource: "roundEnd", withExtension:"wav")
             player = try! AVAudioPlayer(contentsOf: url!)
             player.play()
+            roundEnd()
         }
     }
 }

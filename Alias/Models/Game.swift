@@ -75,6 +75,10 @@ struct Game{
         
     }
     
+    func getCurrentRound()->Int{ //возвращает текущий раунд
+        return currentRound
+    }
+    
     func getPoints()-> Int{ //возращает баллы за раунд
         return pointsOfRounds[currentRound] ?? 0
         
