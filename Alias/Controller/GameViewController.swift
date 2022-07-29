@@ -102,7 +102,7 @@ func updateUI() {
             timerBar.progress = percentageProgress
             secondsPassed += 1
             if percentageProgress == 0.95 {
-                let url = Bundle.main.url(forResource: "roundEnd", withExtension:"wav")
+                let url = Bundle.main.url(forResource: "lastSeconds", withExtension:"wav")
                 player = try! AVAudioPlayer(contentsOf: url!)
                 player.play()
             }
