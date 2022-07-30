@@ -18,6 +18,8 @@
 		303362EB2891748F00876D80 /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303362EA2891748F00876D80 /* ThemesViewController.swift */; };
 		30BD8933289199CF007E2E1D /* ChoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD8932289199CF007E2E1D /* ChoiceController.swift */; };
 		30BD89352892A4F7007E2E1D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD89342892A4F7007E2E1D /* GameViewController.swift */; };
+		CE795ECD28946059006DBA15 /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE795ECC28946059006DBA15 /* JokeViewController.swift */; };
+		CE795ECF28947313006DBA15 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE795ECE28947313006DBA15 /* ResultsViewController.swift */; };
 		CE958E9F289333E2006683C9 /* Quests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE958E9E289333E2006683C9 /* Quests.swift */; };
 		CECC97692891B18E0075AA7B /* WordsBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC97682891B18E0075AA7B /* WordsBrain.swift */; };
 		CECC976D2891BC910075AA7B /* WordsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC976C2891BC910075AA7B /* WordsData.swift */; };
@@ -53,6 +55,8 @@
 		303362EA2891748F00876D80 /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
 		30BD8932289199CF007E2E1D /* ChoiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceController.swift; sourceTree = "<group>"; };
 		30BD89342892A4F7007E2E1D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CE795ECC28946059006DBA15 /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
+		CE795ECE28947313006DBA15 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		CE958E9E289333E2006683C9 /* Quests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quests.swift; sourceTree = "<group>"; };
 		CECC97682891B18E0075AA7B /* WordsBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsBrain.swift; sourceTree = "<group>"; };
 		CECC976C2891BC910075AA7B /* WordsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsData.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 		2726216B28905E9A002D59B0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CE795ECE28947313006DBA15 /* ResultsViewController.swift */,
+				CE795ECC28946059006DBA15 /* JokeViewController.swift */,
 				E9A96D902890478D00F38A49 /* MainScreenViewController.swift */,
 				27D3830B2890F04900B8A285 /* RulesViewController.swift */,
 				30BD8932289199CF007E2E1D /* ChoiceController.swift */,
@@ -276,10 +282,12 @@
 				CE958E9F289333E2006683C9 /* Quests.swift in Sources */,
 				30BD8933289199CF007E2E1D /* ChoiceController.swift in Sources */,
 				E9A96D912890478D00F38A49 /* MainScreenViewController.swift in Sources */,
+				CE795ECF28947313006DBA15 /* ResultsViewController.swift in Sources */,
 				E9A96D8D2890478D00F38A49 /* AppDelegate.swift in Sources */,
 				CECC976D2891BC910075AA7B /* WordsData.swift in Sources */,
 				30BD89352892A4F7007E2E1D /* GameViewController.swift in Sources */,
 				CECC97692891B18E0075AA7B /* WordsBrain.swift in Sources */,
+				CE795ECD28946059006DBA15 /* JokeViewController.swift in Sources */,
 				CECC977528930DD10075AA7B /* Game.swift in Sources */,
 				27D3830C2890F04900B8A285 /* RulesViewController.swift in Sources */,
 				E9A96D8F2890478D00F38A49 /* SceneDelegate.swift in Sources */,

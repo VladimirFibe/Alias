@@ -23,6 +23,7 @@ class GameViewController: UIViewController {
     var secondsPassed = 0
     var player: AVAudioPlayer!
     var game = Game()
+    var  round = 2
 
     
     override func viewDidLoad() {
@@ -30,13 +31,19 @@ class GameViewController: UIViewController {
         updateUI()
         
         
-        let  round = 3 // количество раундов - нужно подгрузить из слайдера
+        //round = 3 // количество раундов - нужно подгрузить из слайдера
         let topic = topics.newYear.rawValue //выбранная тема - нужно подгрузить из тем
         game.createGame(topic: topic, round: round)
         wordLable.text = game.getWord(result: button.skip)
-        
+        actionOn()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        wordLable.text = game.getWord(result: button.skip)
+        scoreLable.text = String(game.getPoints())
+        actionOn()
+        updateUI()
+    }
     
     
     
@@ -87,6 +94,32 @@ class GameViewController: UIViewController {
         }
     }
     
+    func roundEnd(){
+        if game.getCurrentRound() < round {
+            game.changedCurrentRound()
+            print("раунд закончился")
+            performSegue(withIdentifier: "goJoke", sender: "nil")
+        }
+        else {
+            print("Вывод результатов")
+            game.changedCurrentRound()
+            performSegue(withIdentifier: "results", sender: "nil")
+        }
+
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goJoke" {
+            guard let destination = segue.destination as? JokeViewController else { return }
+            destination.game = game
+        }
+        else if segue.identifier == "results" {
+            guard let destination = segue.destination as? ResultsViewController else { return }
+            destination.game = game
+            
+        }
+
+    }
 
 func updateUI() {
     timer.invalidate()
@@ -111,6 +144,7 @@ func updateUI() {
             let url = Bundle.main.url(forResource: "roundEnd", withExtension:"wav")
             player = try! AVAudioPlayer(contentsOf: url!)
             player.play()
+            roundEnd()
         }
     }
 }
