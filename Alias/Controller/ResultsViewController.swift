@@ -22,7 +22,6 @@ class ResultsViewController: UIViewController {
         print(stringForResults)
         textResults.text = stringForResults
 
-        // Do any additional setup after loading the view.
     }
     
 

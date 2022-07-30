@@ -12,26 +12,36 @@ class JokeViewController: UIViewController {
     @IBOutlet var textRound: UILabel!
     @IBOutlet var textJoke: UILabel!
     var game = Game()
-    
+    var joke = Joke()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         textRound.text = "Раунд № \(game.getCurrentRound())"
 
-        // Do any additional setup after loading the view.
+
+        joke.delegate = self
+        joke.getJoke()
+        
     }
     
     @IBAction func start(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+
+extension JokeViewController: JokeDelegate{
+    func didgetJoke(jokeQuestin: String, jokeAnswer: String) {
+        
+        DispatchQueue.main.async { [self] in //это асинхронный поток
+            textJoke.text = "\(jokeQuestin)\n\n \(jokeAnswer)"
+        }
+        
     }
-    */
-
+    
+    func didFailWithError(error: Error) {
+        print("error")
+    }
+    
+    
 }

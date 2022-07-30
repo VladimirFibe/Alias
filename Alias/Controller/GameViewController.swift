@@ -28,14 +28,12 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateUI()
-        
-        
+
         //round = 3 // количество раундов - нужно подгрузить из слайдера
         let topic = topics.newYear.rawValue //выбранная тема - нужно подгрузить из тем
         game.createGame(topic: topic, round: round)
-        wordLable.text = game.getWord(result: button.skip)
-        actionOn()
+        
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,6 +41,10 @@ class GameViewController: UIViewController {
         scoreLable.text = String(game.getPoints())
         actionOn()
         updateUI()
+        
+        
+
+        
     }
     
     
