@@ -16,8 +16,10 @@ class GameViewController: UIViewController {
     @IBOutlet var buttonSkip: UIButton!
     @IBOutlet var buttonYes: UIButton!
     @IBOutlet var buttonFail: UIButton!
+    @IBOutlet weak var bonusStar: UIImageView!
+    @IBOutlet weak var timerLable: UILabel!
     
-    let roundTimer = 60
+    var roundTimer = 60
     var timer = Timer()
     var totalTime = 0
     var secondsPassed = 0
@@ -28,12 +30,19 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateBackTimer), userInfo: nil, repeats: true)
         //round = 3 // количество раундов - нужно подгрузить из слайдера
         let topic = topics.newYear.rawValue //выбранная тема - нужно подгрузить из тем
         game.createGame(topic: topic, round: round)
         
 
+    }
+    
+    @objc func updateBackTimer() {
+        if roundTimer > 0 {
+            timerLable.text = "\(roundTimer)"
+            roundTimer -= 1
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -86,13 +95,16 @@ class GameViewController: UIViewController {
     func actionOn(){
         if game.getActionOn(){
             buttonSkip.isHidden = true
-            buttonYes.setTitle("Согласен", for: .normal)
-            buttonFail.setTitle("Отказ", for: .normal)
+//            buttonYes.setTitle("Согласен", for: .normal)
+//            buttonFail.setTitle("Отказ", for: .normal)
+            bonusStar.isHidden = false
+            
         }
         else {
             buttonSkip.isHidden = false
-            buttonYes.setTitle("Угадано", for: .normal)
-            buttonFail.setTitle("Пропуск", for: .normal)
+//            buttonYes.setTitle("Угадано", for: .normal)
+//            buttonFail.setTitle("Пропуск", for: .normal)
+            bonusStar.isHidden = true
         }
     }
     

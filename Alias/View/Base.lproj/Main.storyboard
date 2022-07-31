@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -332,16 +332,16 @@
                                     <constraint firstAttribute="trailing" secondItem="81p-f4-tb5" secondAttribute="trailing" constant="50" id="wTZ-xF-kLX"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="ufk-VX-Pxt" userLabel="Button Stack View">
-                                <rect key="frame" x="20.666666666666657" y="756" width="373" height="100"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="ufk-VX-Pxt" userLabel="Button Stack View">
+                                <rect key="frame" x="14" y="756" width="386" height="100"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K70-Dd-rYg" userLabel="No Button">
-                                        <rect key="frame" x="0.0" y="0.0" width="96.333333333333329" height="100"/>
-                                        <color key="backgroundColor" red="1" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=" Пропуск">
-                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                        </buttonConfiguration>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K70-Dd-rYg" userLabel="No Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="LnH-Ea-7yS"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="cancel"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <integer key="value" value="10"/>
@@ -351,13 +351,10 @@
                                             <action selector="failButton:" destination="8st-Rl-Mh1" eventType="touchUpInside" id="z1H-ee-lvt"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUW-qH-W57" userLabel="Skip Button">
-                                        <rect key="frame" x="138.33333333333334" y="0.0" width="96.333333333333343" height="100"/>
-                                        <color key="backgroundColor" red="0.94901960780000005" green="0.98039215690000003" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Сброс">
-                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                        </buttonConfiguration>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUW-qH-W57" userLabel="Skip Button">
+                                        <rect key="frame" x="143" y="0.0" width="100" height="100"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="skip"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <integer key="value" value="20"/>
@@ -367,13 +364,10 @@
                                             <action selector="skipButton:" destination="8st-Rl-Mh1" eventType="touchUpInside" id="xPR-D5-5VA"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCC-Rw-d9R" userLabel="Yes Button">
-                                        <rect key="frame" x="276.66666666666663" y="0.0" width="96.333333333333314" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Угадано">
-                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                        </buttonConfiguration>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCC-Rw-d9R" userLabel="Yes Button">
+                                        <rect key="frame" x="286" y="0.0" width="100" height="100"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="YesButton"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <integer key="value" value="30"/>
@@ -389,33 +383,36 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VHG-FF-BXO">
-                                <rect key="frame" x="20" y="88" width="374" height="77"/>
+                                <rect key="frame" x="20" y="88" width="374" height="87"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bonus Indicator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vb-ns-lSH">
-                                        <rect key="frame" x="0.0" y="13.666666666666671" width="183" height="50"/>
-                                        <color key="backgroundColor" red="0.53066647050000004" green="0.57798123359999998" blue="0.86006665230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="wW1-lm-qbD"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonus star 1" translatesAutoresizingMaskIntoConstraints="NO" id="HcF-k8-8Q6">
+                                        <rect key="frame" x="0.0" y="1" width="183" height="85.333333333333329"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6P-oN-8eI" userLabel="Score Label">
-                                        <rect key="frame" x="191" y="13.666666666666671" width="183" height="50"/>
+                                        <rect key="frame" x="191" y="18.666666666666671" width="183" height="50"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="32"/>
                                         <color key="textColor" red="0.3294117647" green="0.086274509799999996" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqH-L2-7hc" userLabel="Timer Label">
+                                <rect key="frame" x="207" y="205" width="0.0" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yIy-9O-oAQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="37"/>
+                                <color key="textColor" red="0.3294117647" green="0.086274509799999996" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Q7-bR-BT8"/>
-                        <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.53403083297317178" green="0.69833675694489794" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="8xd-AE-iFz" firstAttribute="top" secondItem="VHG-FF-BXO" secondAttribute="bottom" constant="75" id="N7c-oU-sZs"/>
+                            <constraint firstItem="kqH-L2-7hc" firstAttribute="top" secondItem="VHG-FF-BXO" secondAttribute="bottom" constant="30" id="Cxf-op-Ayj"/>
                             <constraint firstItem="8xd-AE-iFz" firstAttribute="centerY" secondItem="Fo7-nf-baJ" secondAttribute="centerY" id="NBL-oU-LeQ"/>
                             <constraint firstItem="VHG-FF-BXO" firstAttribute="leading" secondItem="5Q7-bR-BT8" secondAttribute="leading" constant="20" id="OvS-Lu-y93"/>
+                            <constraint firstItem="kqH-L2-7hc" firstAttribute="centerX" secondItem="Fo7-nf-baJ" secondAttribute="centerX" id="PXT-iC-Qbb"/>
                             <constraint firstItem="aLl-RX-ATS" firstAttribute="top" secondItem="5Q7-bR-BT8" secondAttribute="top" constant="20" id="Pwx-0K-M6l"/>
                             <constraint firstItem="VHG-FF-BXO" firstAttribute="top" secondItem="aLl-RX-ATS" secondAttribute="bottom" constant="20" id="VGh-TM-A3i"/>
                             <constraint firstItem="8xd-AE-iFz" firstAttribute="centerX" secondItem="Fo7-nf-baJ" secondAttribute="centerX" id="Z1g-Vy-9Ku"/>
@@ -427,15 +424,18 @@
                             <constraint firstAttribute="bottom" secondItem="ufk-VX-Pxt" secondAttribute="bottom" constant="40" id="iXa-BJ-V5H"/>
                             <constraint firstItem="8xd-AE-iFz" firstAttribute="leading" secondItem="5Q7-bR-BT8" secondAttribute="leading" id="k6A-Pr-Jdv"/>
                             <constraint firstItem="aLl-RX-ATS" firstAttribute="centerX" secondItem="Fo7-nf-baJ" secondAttribute="centerX" id="lVK-LG-hN4"/>
+                            <constraint firstItem="8xd-AE-iFz" firstAttribute="top" secondItem="kqH-L2-7hc" secondAttribute="bottom" constant="5" id="vmK-W5-LpG"/>
                             <constraint firstItem="5Q7-bR-BT8" firstAttribute="trailing" secondItem="VHG-FF-BXO" secondAttribute="trailing" constant="20" id="wPQ-3k-kjQ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bonusStar" destination="HcF-k8-8Q6" id="7Ra-4f-0SN"/>
                         <outlet property="buttonFail" destination="K70-Dd-rYg" id="J2b-mH-29D"/>
                         <outlet property="buttonSkip" destination="kUW-qH-W57" id="sBS-7m-SHw"/>
                         <outlet property="buttonYes" destination="WCC-Rw-d9R" id="EHh-0d-aoU"/>
                         <outlet property="scoreLable" destination="j6P-oN-8eI" id="rdJ-1d-dIf"/>
                         <outlet property="timerBar" destination="aLl-RX-ATS" id="nro-Nb-XdB"/>
+                        <outlet property="timerLable" destination="kqH-L2-7hc" id="XYj-Je-Qhk"/>
                         <outlet property="wordLable" destination="81p-f4-tb5" id="t8L-gi-qod"/>
                         <segue destination="a7P-v4-ceP" kind="presentation" identifier="goJoke" modalPresentationStyle="fullScreen" id="gra-Pc-Nro"/>
                         <segue destination="lYa-Rd-Cc2" kind="presentation" identifier="results" modalPresentationStyle="fullScreen" id="2dh-7F-fC8"/>
@@ -644,17 +644,17 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="K5E-SN-Jjh"/>
         <segue reference="Tv6-nL-hQH"/>
         <segue reference="Iky-IC-GXx"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AliasLogo" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="YesButton" width="68" height="68"/>
         <image name="background" width="250" height="444.66665649414062"/>
+        <image name="bonus star 1" width="85" height="85.333335876464844"/>
+        <image name="cancel" width="68.333335876464844" height="68"/>
         <image name="rectangle" width="533.33331298828125" height="533.33331298828125"/>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="skip" width="68.333335876464844" height="68.333335876464844"/>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
