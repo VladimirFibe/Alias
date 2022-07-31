@@ -30,16 +30,27 @@ struct Game{
         print(gameArray)
     }
     
+    //*****
     mutating func getWord(result: button) -> String{
         var word = ""
-        var points = 1
-        if actionOn { points = 3 } //если до этого было действие, то 3 балла
+//        var points = 1
+//        if actionOn { points = 3 } //если до этого было действие, то 3 балла
         
         switch result {  //в зависимости от правильности ответа прибавляется либо вычитается балл
         case .yes:
-            pointsOfRounds[currentRound]! += points
+            if actionOn {
+            pointsOfRounds[currentRound]! += 3
+            } else {
+                pointsOfRounds[currentRound]! += 1
+            }
         case .fail:
-            if pointsOfRounds[currentRound]! != 0 { pointsOfRounds[currentRound]! -= points}
+            if actionOn && pointsOfRounds[currentRound]! >= 3 {
+                pointsOfRounds[currentRound]! -= 3
+            } else if actionOn && pointsOfRounds[currentRound]! < 3 {
+                pointsOfRounds[currentRound]! = 0
+            } else {
+                pointsOfRounds[currentRound]! -= 1
+            }
         case .skip:
             print("")
         }
@@ -62,6 +73,48 @@ struct Game{
         
         return word
     }
+    
+    //*****
+    
+    
+    //**********
+//    mutating func getWord(result: button) -> String{
+//        var word = ""
+//        var points = 1
+//        if actionOn { points = 3 } //если до этого было действие, то 3 балла
+//
+//        switch result {  //в зависимости от правильности ответа прибавляется либо вычитается балл
+//        case .yes:
+//            pointsOfRounds[currentRound]! += points
+//        case .fail:
+//            if pointsOfRounds[currentRound]! != 0 { pointsOfRounds[currentRound]! -= points}
+//        case .skip:
+//            print("")
+//        }
+//        print(pointsOfRounds)
+//
+//        if Int.random(in: 1...chance) != chance {  //вызов действия с вероятностью 1 к 30
+//            word = gameArray[currentIndexOfWord]
+//            currentIndexOfWord+=1
+//            if currentIndexOfWord == gameArray.count //если номер индекса равен количеству слов в массиве, обнуляем
+//            {
+//                currentIndexOfWord = 0
+//            }
+//            actionOn = false
+//        }
+//        else{
+//
+//            word = randomAction()
+//        }
+//
+//
+//        return word
+//    }
+    //**************
+    
+    
+    
+    
     
     mutating func randomAction() -> String {
         //обращение к модельке действия будет и выбор оттуда рандомного действия
