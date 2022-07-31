@@ -50,10 +50,6 @@ class GameViewController: UIViewController {
         scoreLable.text = String(game.getPoints())
         actionOn()
         updateUI()
-        
-        
-
-        
     }
     
     
