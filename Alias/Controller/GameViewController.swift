@@ -133,6 +133,7 @@ class GameViewController: UIViewController {
 
 func updateUI() {
     timer.invalidate()
+    roundTimer = 60
     totalTime = roundTimer
     timerBar.setProgress(0.0, animated: true)
     secondsPassed = 0
