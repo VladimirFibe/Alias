@@ -25,12 +25,15 @@ class GameViewController: UIViewController {
     var secondsPassed = 0
     var player: AVAudioPlayer!
     var game = Game()
-    var  round = 2
+    var round = 2
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateBackTimer), userInfo: nil, repeats: true)
+        
+        
         //round = 3 // количество раундов - нужно подгрузить из слайдера
         let topic = topics.newYear.rawValue //выбранная тема - нужно подгрузить из тем
         game.createGame(topic: topic, round: round)

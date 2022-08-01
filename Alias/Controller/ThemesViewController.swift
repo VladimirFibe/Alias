@@ -9,7 +9,9 @@ import UIKit
 
 class ThemesViewController: UIViewController {
     
-  var rounds = 2 { didSet { print(rounds)}}
+    var rounds = 2 { didSet { print(rounds)}}
+    
+    
     @IBAction func theme1Pressed(_ sender: UIButton) {
     }
     @IBAction func theme2Pressed(_ sender: UIButton) {
@@ -26,14 +28,14 @@ class ThemesViewController: UIViewController {
         
         self.performSegue(withIdentifier: "goToGame", sender: self)
         
-       // let topic = ((sender as AnyObject).currentTitle)!!
-
-        
-        
     }
     
-    
-  
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToGame" {
+            let controller = segue.destination as! GameViewController
+            controller.round = rounds
+        }
+    }
     
     
     @IBOutlet weak var theme1Button: UIButton!
@@ -41,7 +43,7 @@ class ThemesViewController: UIViewController {
     @IBOutlet weak var theme3Button: UIButton!
     @IBOutlet weak var theme4Button: UIButton!
     @IBOutlet weak var backButton: UIButton!
- 
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,8 +57,7 @@ class ThemesViewController: UIViewController {
         theme2Button.setTitle(topics.normal.rawValue, for: .normal)
         theme3Button.setTitle(topics.hard.rawValue, for: .normal)
         theme4Button.setTitle(topics.newYear.rawValue, for: .normal)
-
         
     }
-
+    
 }

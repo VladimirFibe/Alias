@@ -27,7 +27,7 @@ struct Game{
         for i in 1...round{ //создаем словарь, номер раунда(ключ) - баллы(значение)
             pointsOfRounds[i] = 0
         }
-        print(gameArray)
+        //print(gameArray)
     }
     
     //*****
