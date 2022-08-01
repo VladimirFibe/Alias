@@ -10,16 +10,7 @@ import UIKit
 class ThemesViewController: UIViewController {
     
     var rounds = 2 { didSet { print(rounds)}}
-    
-    
-    @IBAction func theme1Pressed(_ sender: UIButton) {
-    }
-    @IBAction func theme2Pressed(_ sender: UIButton) {
-    }
-    @IBAction func theme3Pressed(_ sender: UIButton) {
-    }
-    @IBAction func theme4Pressed(_ sender: UIButton) {
-    }
+
     @IBAction func backToMainButton(_ sender: UIButton) {
         self.performSegue(withIdentifier: "goBackToChoice", sender: self)
     }

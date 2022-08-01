@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21219" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21200"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AliasLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Mwn-I1-LV4">
-                                <rect key="frame" x="20" y="54" width="374" height="521"/>
+                                <rect key="frame" x="20" y="58" width="374" height="517"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="yYR-zr-cte">
                                 <rect key="frame" x="10" y="625" width="394" height="187"/>
@@ -196,10 +196,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="tLV-jS-gKO">
-                                <rect key="frame" x="10" y="64" width="394" height="708"/>
+                                <rect key="frame" x="10" y="68" width="394" height="704"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP3-JQ-Hmh">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="152.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="151.5"/>
                                         <color key="backgroundColor" red="0.34997856620000001" green="0.7122693658" blue="0.62304598089999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="45"/>
                                         <color key="tintColor" systemColor="systemYellowColor"/>
@@ -207,11 +207,10 @@
                                         <state key="normal" title="Первая тема"/>
                                         <connections>
                                             <action selector="buttonPressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="CqY-nJ-HiA"/>
-                                            <action selector="theme1Pressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="Uir-vE-tGT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFn-a0-nPO">
-                                        <rect key="frame" x="0.0" y="185.5" width="394" height="152"/>
+                                        <rect key="frame" x="0.0" y="184.5" width="394" height="151"/>
                                         <color key="backgroundColor" red="0.34997856620000001" green="0.7122693658" blue="0.62304598089999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="45"/>
                                         <color key="tintColor" systemColor="systemYellowColor"/>
@@ -219,11 +218,10 @@
                                         <state key="normal" title="Вторая тема"/>
                                         <connections>
                                             <action selector="buttonPressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="pe2-p3-1TI"/>
-                                            <action selector="theme2Pressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="1f1-9I-6uM"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRe-HA-Ouv">
-                                        <rect key="frame" x="0.0" y="370.5" width="394" height="152.5"/>
+                                        <rect key="frame" x="0.0" y="368.5" width="394" height="151.5"/>
                                         <color key="backgroundColor" red="0.34997856620000001" green="0.7122693658" blue="0.62304598089999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="45"/>
                                         <color key="tintColor" systemColor="systemYellowColor"/>
@@ -231,11 +229,10 @@
                                         <state key="normal" title="Третья тема"/>
                                         <connections>
                                             <action selector="buttonPressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="t8d-wW-5kc"/>
-                                            <action selector="theme3Pressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="7gw-HO-gdW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuJ-2O-u8l">
-                                        <rect key="frame" x="0.0" y="556" width="394" height="152"/>
+                                        <rect key="frame" x="0.0" y="553" width="394" height="151"/>
                                         <color key="backgroundColor" red="0.34997856620000001" green="0.7122693658" blue="0.62304598089999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="45"/>
                                         <color key="tintColor" systemColor="systemYellowColor"/>
@@ -243,7 +240,6 @@
                                         <state key="normal" title="Четвертая тема"/>
                                         <connections>
                                             <action selector="buttonPressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="7Gv-u4-2AD"/>
-                                            <action selector="theme4Pressed:" destination="wgA-B9-RMN" eventType="touchUpInside" id="kUb-F1-JvC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -309,7 +305,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aLl-RX-ATS" userLabel="Timer Progress View">
-                                <rect key="frame" x="20" y="64" width="374" height="4"/>
+                                <rect key="frame" x="20" y="68" width="374" height="0.0"/>
                                 <color key="progressTintColor" systemColor="systemGreenColor"/>
                                 <color key="trackTintColor" systemColor="systemPinkColor"/>
                             </progressView>
@@ -571,7 +567,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Правила игры" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFQ-g7-5JE">
-                                <rect key="frame" x="114.5" y="49" width="185" height="40"/>
+                                <rect key="frame" x="114.5" y="53" width="185" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="jd9-dE-RRl"/>
                                 </constraints>
@@ -598,7 +594,7 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HV-E4-gA1">
-                                <rect key="frame" x="10" y="99" width="394" height="693"/>
+                                <rect key="frame" x="10" y="103" width="394" height="689"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90S-jc-UyT" userLabel="Rules View">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="22"/>
