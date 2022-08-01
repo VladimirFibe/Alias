@@ -9,7 +9,7 @@ import UIKit
 
 class ChoiceController: UIViewController {
     
-  @IBOutlet weak var teams: UISlider!
+  @IBOutlet weak var rounds: UISlider!
   @IBOutlet weak var personsLabel: UILabel!
     @IBOutlet weak var roundsLabel: UILabel!
     @IBAction func teamSlider(_ sender: UISlider) {
@@ -37,7 +37,7 @@ class ChoiceController: UIViewController {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "goToThemes" {
       let controller = segue.destination as!ThemesViewController
-      controller.teams = Int(teams.value)
+      controller.rounds = Int(rounds.value)
     }
   }
 }

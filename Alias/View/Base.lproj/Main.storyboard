@@ -177,8 +177,8 @@
                         <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
+                        <outlet property="rounds" destination="DmT-oQ-0Jt" id="YlH-Ln-ig7"/>
                         <outlet property="roundsLabel" destination="DcC-WS-3hq" id="Lti-z8-gLM"/>
-                        <outlet property="teams" destination="DmT-oQ-0Jt" id="YlH-Ln-ig7"/>
                         <segue destination="wgA-B9-RMN" kind="presentation" identifier="goToThemes" modalPresentationStyle="fullScreen" id="K5E-SN-Jjh"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="goBackToMain" modalPresentationStyle="fullScreen" id="Iky-IC-GXx"/>
                     </connections>
