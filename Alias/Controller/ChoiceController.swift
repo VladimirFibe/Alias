@@ -9,7 +9,8 @@ import UIKit
 
 class ChoiceController: UIViewController {
     
-    @IBOutlet weak var personsLabel: UILabel!
+  @IBOutlet weak var teams: UISlider!
+  @IBOutlet weak var personsLabel: UILabel!
     @IBOutlet weak var roundsLabel: UILabel!
     @IBAction func teamSlider(_ sender: UISlider) {
         let team = String(format: "%.f", sender.value)
@@ -23,6 +24,7 @@ class ChoiceController: UIViewController {
     
     @IBAction func backToMainPressed(_ sender: UIButton) {
         self.performSegue(withIdentifier: "goBackToMain", sender: self)
+      
     }
     @IBAction func goToThemesPressed(_ sender: UIButton) {
         self.performSegue(withIdentifier: "goToThemes", sender: self)
@@ -32,5 +34,10 @@ class ChoiceController: UIViewController {
         super.viewDidLoad()
 
     }
-
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "goToThemes" {
+      let controller = segue.destination as!ThemesViewController
+      controller.teams = Int(teams.value)
+    }
+  }
 }

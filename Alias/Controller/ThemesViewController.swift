@@ -9,7 +9,8 @@ import UIKit
 
 class ThemesViewController: UIViewController {
     
-    
+  var teams = 2 { didSet { print(teams)}}
+  var round = 1
     @IBAction func theme1Pressed(_ sender: UIButton) {
     }
     @IBAction func theme2Pressed(_ sender: UIButton) {
