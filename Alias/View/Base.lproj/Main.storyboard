@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -199,7 +199,7 @@
                                 <rect key="frame" x="10" y="64" width="394" height="708"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP3-JQ-Hmh">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="152.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="152.5"/>
                                         <color key="backgroundColor" red="0.34997856620000001" green="0.7122693658" blue="0.62304598089999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="45"/>
                                         <color key="tintColor" systemColor="systemYellowColor"/>
@@ -211,7 +211,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFn-a0-nPO">
-                                        <rect key="frame" x="0.0" y="185.33333333333331" width="394" height="152.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="185.5" width="394" height="152"/>
                                         <color key="backgroundColor" red="0.34997856620000001" green="0.7122693658" blue="0.62304598089999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="45"/>
                                         <color key="tintColor" systemColor="systemYellowColor"/>
@@ -223,7 +223,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRe-HA-Ouv">
-                                        <rect key="frame" x="0.0" y="370.66666666666669" width="394" height="152.00000000000006"/>
+                                        <rect key="frame" x="0.0" y="370.5" width="394" height="152.5"/>
                                         <color key="backgroundColor" red="0.34997856620000001" green="0.7122693658" blue="0.62304598089999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="45"/>
                                         <color key="tintColor" systemColor="systemYellowColor"/>
@@ -235,7 +235,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuJ-2O-u8l">
-                                        <rect key="frame" x="0.0" y="555.66666666666663" width="394" height="152.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="556" width="394" height="152"/>
                                         <color key="backgroundColor" red="0.34997856620000001" green="0.7122693658" blue="0.62304598089999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="45"/>
                                         <color key="tintColor" systemColor="systemYellowColor"/>
@@ -319,9 +319,9 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="GeO-UC-34c">
                                         <rect key="frame" x="10" y="20" width="394" height="376"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="81p-f4-tb5" userLabel="Word Lable">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="81p-f4-tb5" userLabel="Word Lable">
                                         <rect key="frame" x="36" y="100" width="342" height="216"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="42"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
                                         <color key="textColor" red="0.2213831544" green="0.42747157810000003" blue="0.62685906889999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -571,7 +571,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Правила игры" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFQ-g7-5JE">
-                                <rect key="frame" x="114.66666666666669" y="49" width="185" height="40"/>
+                                <rect key="frame" x="114.5" y="49" width="185" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="jd9-dE-RRl"/>
                                 </constraints>
@@ -654,19 +654,18 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="K5E-SN-Jjh"/>
         <segue reference="Tv6-nL-hQH"/>
         <segue reference="Iky-IC-GXx"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="AliasLogo" width="170.66667175292969" height="170.66667175292969"/>
-        <image name="YesButton" width="68" height="68"/>
-        <image name="background" width="250" height="444.66665649414062"/>
-        <image name="background-1" width="158" height="281"/>
-        <image name="bonus star 1" width="85" height="85.333335876464844"/>
-        <image name="cancel" width="68.333335876464844" height="68"/>
-        <image name="rectangle" width="533.33331298828125" height="533.33331298828125"/>
-        <image name="skip" width="68.333335876464844" height="68.333335876464844"/>
+        <image name="AliasLogo" width="256" height="256"/>
+        <image name="YesButton" width="102" height="102"/>
+        <image name="background" width="375" height="667"/>
+        <image name="background-1" width="237" height="421.5"/>
+        <image name="bonus star 1" width="127.5" height="128"/>
+        <image name="cancel" width="102.5" height="102"/>
+        <image name="rectangle" width="533" height="533"/>
+        <image name="skip" width="102.5" height="102.5"/>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
