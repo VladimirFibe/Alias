@@ -25,6 +25,7 @@ class ThemesViewController: UIViewController {
     if segue.identifier == "goToGame" {
       let controller = segue.destination as! GameViewController
       controller.round = rounds
+      controller.topic = topic
     }
     print(#function, rounds, topic)
   }

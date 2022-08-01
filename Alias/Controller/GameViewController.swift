@@ -27,6 +27,7 @@ class GameViewController: UIViewController {
     var game = Game()
     var round = 2
 
+  var topic = topics.newYear.rawValue //выбранная тема - нужно подгрузить из тем
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,6 @@ class GameViewController: UIViewController {
         
         
         //round = 3 // количество раундов - нужно подгрузить из слайдера
-        let topic = topics.newYear.rawValue //выбранная тема - нужно подгрузить из тем
         game.createGame(topic: topic, round: round)
         
 
