@@ -35,7 +35,7 @@
 		E972BA292892022500B05AF5 /* Hardcore.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA202892022500B05AF5 /* Hardcore.json */; };
 		E972BA2A2892022500B05AF5 /* NewYear.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA212892022500B05AF5 /* NewYear.json */; };
 		E972BA2B2892022500B05AF5 /* Normal.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA222892022500B05AF5 /* Normal.json */; };
-		E972BA2C2892022500B05AF5 /* 0.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA232892022500B05AF5 /* 0.json */; };
+		E972BA2C2892022500B05AF5 /* EasyWords.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA232892022500B05AF5 /* EasyWords.json */; };
 		E972BA2E2892022500B05AF5 /* QuickGame.json in Resources */ = {isa = PBXBuildFile; fileRef = E972BA252892022500B05AF5 /* QuickGame.json */; };
 		E9A96D8D2890478D00F38A49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A96D8C2890478D00F38A49 /* AppDelegate.swift */; };
 		E9A96D8F2890478D00F38A49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A96D8E2890478D00F38A49 /* SceneDelegate.swift */; };
@@ -74,7 +74,7 @@
 		E972BA202892022500B05AF5 /* Hardcore.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Hardcore.json; sourceTree = "<group>"; };
 		E972BA212892022500B05AF5 /* NewYear.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NewYear.json; sourceTree = "<group>"; };
 		E972BA222892022500B05AF5 /* Normal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Normal.json; sourceTree = "<group>"; };
-		E972BA232892022500B05AF5 /* 0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0.json; sourceTree = "<group>"; };
+		E972BA232892022500B05AF5 /* EasyWords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EasyWords.json; sourceTree = "<group>"; };
 		E972BA252892022500B05AF5 /* QuickGame.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuickGame.json; sourceTree = "<group>"; };
 		E9A96D892890478D00F38A49 /* Alias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A96D8C2890478D00F38A49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 		E972BA1C289201F900B05AF5 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				E972BA232892022500B05AF5 /* 0.json */,
+				E972BA232892022500B05AF5 /* EasyWords.json */,
 				E972BA202892022500B05AF5 /* Hardcore.json */,
 				E92AC38628939F40001676EE /* Quests.json */,
 				E972BA212892022500B05AF5 /* NewYear.json */,
@@ -256,7 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27D6A9AB289300DC00AC46A9 /* alarm_sound.mp3 in Resources */,
-				E972BA2C2892022500B05AF5 /* 0.json in Resources */,
+				E972BA2C2892022500B05AF5 /* EasyWords.json in Resources */,
 				E972BA2B2892022500B05AF5 /* Normal.json in Resources */,
 				E972BA2A2892022500B05AF5 /* NewYear.json in Resources */,
 				27D6A9B728930A8000AC46A9 /* roundEnd.wav in Resources */,
