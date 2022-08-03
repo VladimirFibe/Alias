@@ -17,7 +17,7 @@ class ResultsViewController: UIViewController {
         var stringForResults = ""
         for i in 1...game.pointsOfRounds.count{
             stringForResults += "Раунд № \(i): \(game.pointsOfRounds[i]!)\n"
-            
+        
         }
         print(stringForResults)
         textResults.text = stringForResults
@@ -26,7 +26,7 @@ class ResultsViewController: UIViewController {
     
 
     /*
-    // MARK: - Navigation
+
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
