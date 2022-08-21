@@ -46,16 +46,15 @@ class ViewController: UIViewController {
                           y: view.center.y + point.y)
     let xFromCenter = card.center.x - view.center.x
     let isRight = xFromCenter > 0
-    thumbImageView.alpha = isRight ? xFromCenter / view.center.x : -xFromCenter / view.center.x
-    let color: UIColor = isRight ? .green : .red
-    let name = isRight ? "hand.thumbsup.fill" : "hand.thumbsdown.fill"
-    let image = UIImage(systemName: name)?.withTintColor(color, renderingMode: .alwaysOriginal)
-    thumbImageView.image = image
+    thumbImageView.alpha = abs(xFromCenter) / view.center.x
+    thumbImageView.tintColor = isRight ? .green : .red
+    thumbImageView.image = UIImage(systemName: isRight ? "hand.thumbsup.fill" : "hand.thumbsdown.fill")
     if sender.state == UIGestureRecognizer.State.ended {
       UIView.animate(withDuration: 0.2) {
         card.center = self.view.center
         self.thumbImageView.alpha = 0
       }
+      print(isRight ? "Верно" : "Не верно")
     }
   }
 }
