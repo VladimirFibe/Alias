@@ -8,7 +8,22 @@
 import SwiftUI
 
 class ViewController: UIViewController {
-  let cardView = UIView()
+  let cardView: UIView = {
+    $0.translatesAutoresizingMaskIntoConstraints = false
+    $0.layer.cornerRadius = 30
+    $0.backgroundColor = .lightGray
+    return $0
+  } (UIView())
+  
+  let titleLabel: UILabel = {
+    $0.text = "Загадка"
+    $0.font = .systemFont(ofSize: 40)
+    $0.textColor = .black
+    $0.textAlignment = .center
+    $0.numberOfLines = 0
+    $0.translatesAutoresizingMaskIntoConstraints = false
+    return $0
+  }(UILabel())
   var panGesture = UIPanGestureRecognizer()
   let thumbImageView: UIImageView = {
     $0.translatesAutoresizingMaskIntoConstraints = false
@@ -19,10 +34,9 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     view.addSubview(cardView)
+    cardView.addSubview(titleLabel)
     cardView.addSubview(thumbImageView)
 
-    cardView.backgroundColor = .systemBlue
-    cardView.translatesAutoresizingMaskIntoConstraints = false
     panGesture = UIPanGestureRecognizer(target: self, action: #selector(panCard))
     cardView.addGestureRecognizer(panGesture)
     
@@ -32,6 +46,10 @@ class ViewController: UIViewController {
       cardView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
       view.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: 50),
       
+      titleLabel.topAnchor.constraint(equalToSystemSpacingBelow: cardView.topAnchor, multiplier: 1),
+      cardView.bottomAnchor.constraint(equalToSystemSpacingBelow: titleLabel.bottomAnchor, multiplier: 1),
+      titleLabel.leadingAnchor.constraint(equalToSystemSpacingAfter: cardView.leadingAnchor, multiplier: 1),
+      cardView.trailingAnchor.constraint(equalToSystemSpacingAfter: titleLabel.trailingAnchor, multiplier: 1),
       thumbImageView.centerYAnchor.constraint(equalTo: cardView.centerYAnchor),
       thumbImageView.centerXAnchor.constraint(equalTo: cardView.centerXAnchor),
       thumbImageView.widthAnchor.constraint(equalTo: cardView.widthAnchor, multiplier: 0.5),
