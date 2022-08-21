@@ -85,6 +85,7 @@ class ViewController: UIViewController {
     thumbImageView.alpha = abs(xFromCenter) / view.center.x
     thumbImageView.tintColor = isRight ? .green : .red
     thumbImageView.image = UIImage(systemName: isRight ? "hand.thumbsup.fill" : "hand.thumbsdown.fill")
+    card.transform = CGAffineTransform(rotationAngle: xFromCenter / (view.frame.height - card.center.y))
     if sender.state == UIGestureRecognizer.State.ended {
       
       if card.center.x < 75 {
@@ -119,6 +120,7 @@ class ViewController: UIViewController {
     UIView.animate(withDuration: 0.2) {
       self.cardView.center = self.view.center
       self.thumbImageView.alpha = 0
+      self.cardView.transform = .identity
     }
   }
 }
