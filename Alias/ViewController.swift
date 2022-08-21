@@ -43,7 +43,11 @@ class ViewController: UIViewController {
     let point = sender.translation(in: view)
     card.center = CGPoint(x: view.center.x + point.x,
                           y: view.center.y + point.y)
-    
+    let isRight = card.center.x - view.center.x > 0
+    let color: UIColor = isRight ? .green : .red
+    let name = isRight ? "hand.thumbsup.fill" : "hand.thumbsdown.fill"
+    let image = UIImage(systemName: name)?.withTintColor(color, renderingMode: .alwaysOriginal)
+    thumbImageView.image = image
     if sender.state == UIGestureRecognizer.State.ended {
       UIView.animate(withDuration: 0.2) {
         card.center = self.view.center
