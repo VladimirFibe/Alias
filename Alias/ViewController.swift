@@ -81,11 +81,17 @@ class ViewController: UIViewController {
     card.center = CGPoint(x: view.center.x + point.x,
                           y: view.center.y + point.y)
     let xFromCenter = card.center.x - view.center.x
+    let absXFromCenter = abs(xFromCenter)
     let isRight = xFromCenter > 0
-    thumbImageView.alpha = abs(xFromCenter) / view.center.x
+    var scale: CGFloat = 1.0
+    if absXFromCenter > 100 {
+      scale = 100 / absXFromCenter
+    }
+    thumbImageView.alpha = absXFromCenter / view.center.x
     thumbImageView.tintColor = isRight ? .green : .red
     thumbImageView.image = UIImage(systemName: isRight ? "hand.thumbsup.fill" : "hand.thumbsdown.fill")
-    card.transform = CGAffineTransform(rotationAngle: xFromCenter / (view.frame.height - card.center.y))
+    
+    card.transform = CGAffineTransform(rotationAngle: xFromCenter / (view.frame.height - card.center.y)).scaledBy(x: scale, y: scale)
     if sender.state == UIGestureRecognizer.State.ended {
       
       if card.center.x < 75 {
