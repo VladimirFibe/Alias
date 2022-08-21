@@ -12,6 +12,7 @@ class ViewController: UIViewController {
   var panGesture = UIPanGestureRecognizer()
   let thumbImageView: UIImageView = {
     $0.translatesAutoresizingMaskIntoConstraints = false
+    $0.alpha = 0
     $0.contentMode = .scaleAspectFit
     return $0
   }(UIImageView(image: UIImage(systemName: "hand.thumbsup.fill")?.withTintColor(.green, renderingMode: .alwaysOriginal)))
@@ -43,7 +44,9 @@ class ViewController: UIViewController {
     let point = sender.translation(in: view)
     card.center = CGPoint(x: view.center.x + point.x,
                           y: view.center.y + point.y)
-    let isRight = card.center.x - view.center.x > 0
+    let xFromCenter = card.center.x - view.center.x
+    let isRight = xFromCenter > 0
+    thumbImageView.alpha = isRight ? xFromCenter / view.center.x : -xFromCenter / view.center.x
     let color: UIColor = isRight ? .green : .red
     let name = isRight ? "hand.thumbsup.fill" : "hand.thumbsdown.fill"
     let image = UIImage(systemName: name)?.withTintColor(color, renderingMode: .alwaysOriginal)
@@ -51,6 +54,7 @@ class ViewController: UIViewController {
     if sender.state == UIGestureRecognizer.State.ended {
       UIView.animate(withDuration: 0.2) {
         card.center = self.view.center
+        self.thumbImageView.alpha = 0
       }
     }
   }
