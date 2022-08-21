@@ -8,10 +8,22 @@
 import SwiftUI
 
 class ViewController: UIViewController {
+  let backView: UIView = {
+    $0.translatesAutoresizingMaskIntoConstraints = false
+    $0.layer.cornerRadius = 30
+    $0.layer.borderColor = UIColor.black.cgColor
+    $0.layer.borderWidth = 1
+    $0.backgroundColor = .lightGray
+    return $0
+  } (UIView())
+  
   let cardView: UIView = {
     $0.translatesAutoresizingMaskIntoConstraints = false
     $0.layer.cornerRadius = 30
+    $0.layer.borderColor = UIColor.black.cgColor
+    $0.layer.borderWidth = 1
     $0.backgroundColor = .lightGray
+    
     return $0
   } (UIView())
   
@@ -33,6 +45,7 @@ class ViewController: UIViewController {
   }(UIImageView(image: UIImage(systemName: "hand.thumbsup.fill")?.withTintColor(.green, renderingMode: .alwaysOriginal)))
   override func viewDidLoad() {
     super.viewDidLoad()
+    view.addSubview(backView)
     view.addSubview(cardView)
     cardView.addSubview(titleLabel)
     cardView.addSubview(thumbImageView)
@@ -41,6 +54,11 @@ class ViewController: UIViewController {
     cardView.addGestureRecognizer(panGesture)
     
     NSLayoutConstraint.activate([
+      backView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+      backView.widthAnchor.constraint(equalTo: backView.heightAnchor, multiplier: 0.66),
+      backView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+      view.trailingAnchor.constraint(equalTo: backView.trailingAnchor, constant: 50),
+      
       cardView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
       cardView.widthAnchor.constraint(equalTo: cardView.heightAnchor, multiplier: 0.66),
       cardView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
@@ -68,11 +86,39 @@ class ViewController: UIViewController {
     thumbImageView.tintColor = isRight ? .green : .red
     thumbImageView.image = UIImage(systemName: isRight ? "hand.thumbsup.fill" : "hand.thumbsdown.fill")
     if sender.state == UIGestureRecognizer.State.ended {
-      UIView.animate(withDuration: 0.2) {
-        card.center = self.view.center
-        self.thumbImageView.alpha = 0
+      
+      if card.center.x < 75 {
+        UIView.animate(withDuration: 0.2, animations: {
+          card.center = CGPoint(x: card.center.x - 200,
+                                y: card.center.y + 75)
+          card.alpha = 0
+        }) { _ in
+          self.resetCard()
+          DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            card.alpha = 1
+          }
+        }
+      } else if card.center.x > (view.frame.width - 75) {
+        
+        UIView.animate(withDuration: 0.2, animations: {
+          card.center = CGPoint(x: card.center.x + 200,
+                                y: card.center.y + 75)
+          card.alpha = 0
+        }) { _ in
+          self.resetCard()
+          DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            card.alpha = 1
+          }
+        }
+      } else {
+        resetCard()
       }
-      print(isRight ? "Верно" : "Не верно")
+    }
+  }
+  func resetCard() {
+    UIView.animate(withDuration: 0.2) {
+      self.cardView.center = self.view.center
+      self.thumbImageView.alpha = 0
     }
   }
 }
