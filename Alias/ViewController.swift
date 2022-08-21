@@ -8,6 +8,7 @@
 import SwiftUI
 
 class ViewController: UIViewController {
+  var game = Game()
   let backView: UIView = {
     $0.translatesAutoresizingMaskIntoConstraints = false
     $0.layer.cornerRadius = 30
@@ -45,6 +46,8 @@ class ViewController: UIViewController {
   }(UIImageView(image: UIImage(systemName: "hand.thumbsup.fill")?.withTintColor(.green, renderingMode: .alwaysOriginal)))
   override func viewDidLoad() {
     super.viewDidLoad()
+    game.createGame(topic: topics.newYear.rawValue, round: 1)
+    titleLabel.text = game.getWord(result: .skip)
     view.addSubview(backView)
     view.addSubview(cardView)
     cardView.addSubview(titleLabel)
@@ -103,6 +106,7 @@ class ViewController: UIViewController {
           self.resetCard()
           DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
             card.alpha = 1
+            self.titleLabel.text = self.game.getWord(result: .fail)
           }
         }
       } else if card.center.x > (view.frame.width - 75) {
@@ -115,6 +119,7 @@ class ViewController: UIViewController {
           self.resetCard()
           DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
             card.alpha = 1
+            self.titleLabel.text = self.game.getWord(result: .yes)
           }
         }
       } else {
